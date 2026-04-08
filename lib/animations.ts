@@ -1,7 +1,6 @@
 // Framer Motion animation variants for Pure Work Spaces
-import type { Variants } from 'framer-motion'
 
-export const pageVariants: Variants = {
+export const pageVariants = {
   initial: {
     opacity: 0,
     y: 20,
@@ -22,9 +21,9 @@ export const pageVariants: Variants = {
       ease: "easeIn",
     },
   },
-}
+};
 
-export const containerVariants: Variants = {
+export const containerVariants = {
   hidden: { opacity: 0 },
   visible: {
     opacity: 1,
@@ -33,9 +32,9 @@ export const containerVariants: Variants = {
       delayChildren: 0.2,
     },
   },
-}
+};
 
-export const itemVariants: Variants = {
+export const itemVariants = {
   hidden: { opacity: 0, y: 20 },
   visible: {
     opacity: 1,
@@ -45,9 +44,9 @@ export const itemVariants: Variants = {
       ease: "easeOut",
     },
   },
-}
+};
 
-export const fadeInVariants: Variants = {
+export const fadeInVariants = {
   hidden: { opacity: 0 },
   visible: {
     opacity: 1,
@@ -56,9 +55,9 @@ export const fadeInVariants: Variants = {
       ease: "easeOut",
     },
   },
-}
+};
 
-export const slideInVariants: Variants = {
+export const slideInVariants = {
   hidden: { opacity: 0, x: -30 },
   visible: {
     opacity: 1,
@@ -68,9 +67,9 @@ export const slideInVariants: Variants = {
       ease: "easeOut",
     },
   },
-}
+};
 
-export const scaleInVariants: Variants = {
+export const scaleInVariants = {
   hidden: { opacity: 0, scale: 0.95 },
   visible: {
     opacity: 1,
@@ -80,7 +79,7 @@ export const scaleInVariants: Variants = {
       ease: "easeOut",
     },
   },
-}
+};
 
 export const hoverScale = {
   whileHover: { scale: 1.05 },
