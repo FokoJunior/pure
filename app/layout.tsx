@@ -41,9 +41,9 @@ export default function RootLayout({
   return (
    // <html lang="en" suppressHydrationWarning data-palette="arctic-pine">
   // <html lang="en" suppressHydrationWarning data-palette="arctic-pine">
-  //  <html lang="en" suppressHydrationWarning data-palette="mono-gray">
+   <html lang="en" suppressHydrationWarning data-palette="mono-gray">
 
-    <html lang="en" suppressHydrationWarning>
+    {/* <html lang="en" suppressHydrationWarning> */}
 
       <body className="font-sans antialiased bg-background text-foreground">
         <Providers>
