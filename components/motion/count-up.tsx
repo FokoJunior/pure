@@ -30,13 +30,33 @@ export function CountUp({
 }: CountUpProps) {
   const ref = useRef<HTMLSpanElement>(null)
   const [value, setValue] = useState(start)
+  const [hasStarted, setHasStarted] = useState(false)
+  const [hasCompleted, setHasCompleted] = useState(false)
   const inView = useInView(ref, { once, margin: '0px 0px -10% 0px' })
   const prefersReducedMotion = useReducedMotion()
 
   useEffect(() => {
-    if (!inView) return
+    if (hasCompleted) return
+    if (inView) {
+      setHasStarted(true)
+      return
+    }
+
+    // Fallback: if element is already visible on mount (hero/KPI), start anyway.
+    const el = ref.current
+    if (!el) return
+    const rect = el.getBoundingClientRect()
+    const viewportH = window.innerHeight || document.documentElement.clientHeight
+    if (rect.top < viewportH && rect.bottom > 0) {
+      setHasStarted(true)
+    }
+  }, [hasCompleted, inView])
+
+  useEffect(() => {
+    if (!hasStarted || hasCompleted) return
     if (prefersReducedMotion) {
       setValue(end)
+      setHasCompleted(true)
       return
     }
 
@@ -53,12 +73,15 @@ export function CountUp({
 
       if (progress < 1) {
         rafId = requestAnimationFrame(tick)
+      } else {
+        setValue(to)
+        setHasCompleted(true)
       }
     }
 
     rafId = requestAnimationFrame(tick)
     return () => cancelAnimationFrame(rafId)
-  }, [duration, end, inView, prefersReducedMotion, start])
+  }, [duration, end, hasCompleted, hasStarted, prefersReducedMotion, start])
 
   return (
     <span ref={ref} className={className}>
@@ -71,4 +94,3 @@ export function CountUp({
     </span>
   )
 }
-
