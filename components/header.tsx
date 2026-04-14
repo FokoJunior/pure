@@ -30,7 +30,7 @@ export default function Header() {
                     <img
                         src="/PWS-Logo/PWS-PNG-files/PWS-Secondary-logo-png/PWS Secondary logo - dark green@0.5x.png"
                         alt="Pure Work Spaces"
-                        className="h-8 w-auto md:h-10"
+                        className="h-8 w-auto md:h-20"
                     />
                 </Link>
 
