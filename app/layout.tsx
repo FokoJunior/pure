@@ -35,7 +35,7 @@ export default function RootLayout({
     children: ReactNode
 }>) {
     return (
-        <html lang="en" suppressHydrationWarning >
+        <html lang="en" suppressHydrationWarning data-palette="arctic-pine" >
             <body className="font-sans antialiased bg-background text-foreground">
                 <Providers>
                     <Header />
