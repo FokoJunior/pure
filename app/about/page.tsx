@@ -47,7 +47,7 @@ export default function AboutPage() {
           <Reveal className="mx-auto max-w-3xl text-center">
             <h1 className="text-5xl md:text-6xl font-bold tracking-tight text-balance">About Pure Work Spaces</h1>
             <p className="mt-5 text-lg md:text-xl text-foreground/70 text-balance">
-              Founded on a mission to transform workspaces and improve lives through professional cleaning and care.
+              Cleanliness is not just a service, it is a foundation for clarity, confidence, and calm.
             </p>
             <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center">
               <Link href="/services">
@@ -73,15 +73,15 @@ export default function AboutPage() {
               <Reveal>
                 <h2 className="text-4xl font-bold text-foreground mb-6">Our Story</h2>
                 <div className="space-y-4 text-foreground/80 leading-relaxed">
-                <p>
-                  Pure Work Spaces was founded by a public health nursing professional with over a decade of experience in intensive care settings. Having witnessed firsthand the critical impact of hygiene and cleanliness on health and recovery, our founder envisioned creating a cleaning service that goes beyond surface-level cleanliness.
-                </p>
-                <p>
-                  We recognized that most businesses treat cleaning as a necessary expense rather than an investment in employee health and productivity. We set out to change that perspective, proving that professional cleaning services can significantly improve the wellbeing, morale, and performance of everyone in the space.
-                </p>
-                <p>
-                  Today, Pure Work Spaces serves businesses across Swindon, Oxford, and surrounding areas with the same dedication and attention to detail that defined our founder&apos;s nursing career.
-                </p>
+                  <p>
+                    Pure Work Spaces Ltd was built on a simple idea: that the spaces we work and live in shape how we feel, think, and perform. Cleanliness is not just a service, it is a foundation for clarity, confidence, and calm.
+                  </p>
+                  <p>
+                    The founder comes from a background in Public Health Nursing, with earlier experience in Intensive Care, where cleanliness was never just a task, but something closely linked to safety, wellbeing, and how people feel day to day.
+                  </p>
+                  <p>
+                    "Pure" is not just a name. It reflects a commitment to doing things properly, with care, attention, and consistency. Being thorough matters, and where possible, going beyond what is expected is simply part of the standard.
+                  </p>
                 </div>
               </Reveal>
             </div>

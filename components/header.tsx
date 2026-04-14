@@ -27,7 +27,7 @@ export default function Header() {
       <div className="container mx-auto px-4 h-16 flex items-center justify-between">
         {/* Logo */}
         <Link href="/" className="flex items-center gap-2 hover:opacity-80 transition-opacity">
-          <img src="/logo.png" alt="Pure Work Spaces" className="h-10 w-auto" />
+          <img src="/PWS-Logo/PWS-PNG-files/PWS-Primary-logo/PWS Primary Logo - White@0.5x.png" alt="Pure Work Spaces" className="h-10 w-auto" />
         </Link>
 
         {/* Desktop Navigation */}
@@ -36,11 +36,10 @@ export default function Header() {
             <Link
               key={item.href}
               href={item.href}
-              className={`text-sm font-medium transition-colors ${
-                isActive(item.href)
+              className={`text-sm font-medium transition-colors ${isActive(item.href)
                   ? 'text-primary font-semibold'
                   : 'text-foreground/70 hover:text-foreground'
-              }`}
+                }`}
             >
               {item.label}
             </Link>
@@ -82,11 +81,10 @@ export default function Header() {
                   key={item.href}
                   href={item.href}
                   onClick={() => setIsOpen(false)}
-                  className={`text-sm font-medium py-3 px-3 rounded-md transition-colors ${
-                    isActive(item.href)
+                  className={`text-sm font-medium py-3 px-3 rounded-md transition-colors ${isActive(item.href)
                       ? 'text-primary bg-primary/10'
                       : 'text-foreground/70 hover:text-foreground hover:bg-foreground/5'
-                  }`}
+                    }`}
                 >
                   {item.label}
                 </Link>

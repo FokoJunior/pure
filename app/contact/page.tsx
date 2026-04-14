@@ -38,12 +38,12 @@ export default function ContactPage() {
 
   const services = [
     'Commercial Cleaning',
-    'After-Build Cleaning',
-    'End-of-Tenancy',
+    'After Build Cleans',
+    'End of Tenancy Cleans',
     'Serviced Accommodation',
     'Event Cleaning',
-    'Hotel & Holiday',
-    'Domestic Cleaning',
+    'Hotel / Holiday Lets',
+    'Domestic Clients',
     'Other',
   ]
 
@@ -77,8 +77,8 @@ export default function ContactPage() {
                     </div>
                     <div>
                       <h3 className="font-semibold text-foreground mb-1">Phone</h3>
-                      <a href="tel:+441234567890" className="text-primary hover:text-primary/80 transition-colors">
-                        +44 (0) 1234 567 890
+                      <a href="tel:07300864523" className="text-primary hover:text-primary/80 transition-colors">
+                        07300864523
                       </a>
                       <p className="text-sm text-foreground/60 mt-1">Mon-Fri, 9am-5pm</p>
                     </div>
@@ -93,8 +93,8 @@ export default function ContactPage() {
                     </div>
                     <div>
                       <h3 className="font-semibold text-foreground mb-1">Email</h3>
-                      <a href="mailto:info@pureworkspaces.co.uk" className="text-primary hover:text-primary/80 transition-colors">
-                        info@pureworkspaces.co.uk
+                      <a href="mailto:hello@pureworkspaces.uk" className="text-primary hover:text-primary/80 transition-colors">
+                        hello@pureworkspaces.uk
                       </a>
                       <p className="text-sm text-foreground/60 mt-1">We respond within 24 hours</p>
                     </div>
@@ -110,7 +110,7 @@ export default function ContactPage() {
                     <div>
                       <h3 className="font-semibold text-foreground mb-1">Service Areas</h3>
                       <p className="text-foreground/70 text-sm">
-                        Swindon, Oxford, and surrounding areas
+                        Swindon, Oxford, Abingdon, Wantage, Milton, Didcot and surrounding areas
                       </p>
                       <p className="text-sm text-foreground/60 mt-1">Available for consultations</p>
                     </div>

@@ -13,7 +13,7 @@ export default function Footer() {
           {/* Company Info */}
           <Reveal>
             <div>
-              <img src="/logo.png" alt="Pure Work Spaces" className="h-10 w-auto mb-4" />
+              <img src="/PWS-Logo/PWS-PNG-files/PWS-Primary-logo/PWS Primary Logo - dark Green@0.5x.png" alt="Pure Work Spaces" className="h-10 w-auto mb-4" />
               <p className="text-sm text-foreground/70 mb-5 leading-relaxed">
                 Transforming workspaces through professional cleaning services that prioritize health, wellbeing, and consistency.
               </p>
@@ -105,22 +105,22 @@ export default function Footer() {
               <h3 className="font-semibold mb-4">Contact</h3>
               <div className="space-y-3 mb-5">
                 <a
-                  href="tel:+441234567890"
+                  href="tel:07300864523"
                   className="flex items-center gap-2 text-sm text-foreground/70 hover:text-primary transition-colors"
                 >
                   <Phone size={16} />
-                  +44 (0) 1234 567 890
+                  07300864523
                 </a>
                 <a
-                  href="mailto:info@pureworkspaces.co.uk"
+                  href="mailto:hello@pureworkspaces.uk"
                   className="flex items-center gap-2 text-sm text-foreground/70 hover:text-primary transition-colors"
                 >
                   <Mail size={16} />
-                  info@pureworkspaces.co.uk
+                  hello@pureworkspaces.uk
                 </a>
                 <div className="flex items-center gap-2 text-sm text-foreground/70">
                   <MapPin size={16} />
-                  Swindon, Oxford & Area
+                  Prama House, 267 Banbury Road, Oxford, OX2 7HT
                 </div>
               </div>
 

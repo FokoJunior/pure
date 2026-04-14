@@ -13,7 +13,7 @@ const _geistMono = Geist_Mono({ subsets: ["latin"] });
 export const metadata: Metadata = {
   title: 'Pure Work Spaces | Professional Cleaning Services',
   description: 'Transform your workspace. Professional commercial cleaning services in Swindon, Oxford and surrounding areas.',
-  
+
   icons: {
     icon: [
       {
@@ -39,11 +39,9 @@ export default function RootLayout({
   children: ReactNode
 }>) {
   return (
-   // <html lang="en" suppressHydrationWarning data-palette="arctic-pine">
-  // <html lang="en" suppressHydrationWarning data-palette="arctic-pine">
-   <html lang="en" suppressHydrationWarning data-palette="mono-gray">
+    <html lang="en" suppressHydrationWarning>
 
-    {/* <html lang="en" suppressHydrationWarning> */}
+      {/* <html lang="en" suppressHydrationWarning> */}
 
       <body className="font-sans antialiased bg-background text-foreground">
         <Providers>
