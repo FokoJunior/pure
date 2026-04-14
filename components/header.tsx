@@ -28,7 +28,7 @@ export default function Header() {
                 {/* Logo */}
                 <Link href="/" className="flex items-center gap-2 hover:opacity-80 transition-opacity">
                     <img
-                        src="/PWS-Logo/PWS-PNG-files/PWS-Secondary-logo-png/PWS Secondary logo - black@0.5x.png"
+                        src="/PWS-Logo/PWS-PNG-files/PWS-Secondary-logo-png/PWS Secondary logo - dark green@0.5x.png"
                         alt="Pure Work Spaces"
                         className="h-8 w-auto md:h-10"
                     />
