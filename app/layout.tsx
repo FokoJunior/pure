@@ -17,19 +17,15 @@ export const metadata: Metadata = {
     icons: {
         icon: [
             {
-                url: '/logo.png',
+                url: '/PWS-Logo/PWS-PNG-files/PWS-Primary-logo/PWS Primary Logo - dark Green@0.5x.png',
                 media: '(prefers-color-scheme: light)',
             },
             {
-                url: '/logo.png',
+                url: '/PWS-Logo/PWS-PNG-files/PWS-Primary-logo/PWS Primary Logo - White@0.5x.png',
                 media: '(prefers-color-scheme: dark)',
             },
-            {
-                url: '/logo.png',
-                type: 'image/svg+xml',
-            },
         ],
-        apple: '/logo.png',
+        apple: '/PWS-Logo/PWS-PNG-files/PWS-Primary-logo/PWS Primary Logo - dark Green@0.5x.png',
     },
 }
 
@@ -39,7 +35,7 @@ export default function RootLayout({
     children: ReactNode
 }>) {
     return (
-        <html lang="en" suppressHydrationWarning>
+        <html lang="en" suppressHydrationWarning data-palette="sage-stone">
             <body className="font-sans antialiased bg-background text-foreground">
                 <Providers>
                     <Header />
@@ -51,3 +47,4 @@ export default function RootLayout({
         </html>
     )
 }
+

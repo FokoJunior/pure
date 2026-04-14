@@ -13,9 +13,13 @@ export default function Footer() {
                     {/* Company Info */}
                     <Reveal>
                         <div>
-                            <img src="/PWS-Logo/PWS-PNG-files/PWS-Primary-logo/PWS Primary Logo - dark Green@0.5x.png" alt="Pure Work Spaces" className="h-10 w-auto mb-4" />
+                            <img
+                                src="/PWS-Logo/PWS-PNG-files/PWS-wordmark-png/PWS wordmark - off white@0.5x.png"
+                                alt="Pure Work Spaces"
+                                className="h-10 w-auto mb-4"
+                            />
                             <p className="text-sm text-foreground/70 mb-5 leading-relaxed">
-                                Transforming workspaces through professional cleaning services that prioritize health, wellbeing, and consistency.
+                                Pure Work Spaces Ltd: Cleanliness is not just a service, it is a foundation for clarity, confidence, and calm.
                             </p>
                             <div className="flex gap-4">
                                 <a href="#" className="text-foreground/70 hover:text-primary transition-colors" aria-label="Facebook">
@@ -36,36 +40,12 @@ export default function Footer() {
                         <div>
                             <h3 className="font-semibold mb-4">Quick Links</h3>
                             <ul className="space-y-2">
-                                <li>
-                                    <Link href="/" className="text-sm text-foreground/70 hover:text-primary transition-colors">
-                                        Home
-                                    </Link>
-                                </li>
-                                <li>
-                                    <Link href="/services" className="text-sm text-foreground/70 hover:text-primary transition-colors">
-                                        Services
-                                    </Link>
-                                </li>
-                                <li>
-                                    <Link href="/gallery" className="text-sm text-foreground/70 hover:text-primary transition-colors">
-                                        Gallery
-                                    </Link>
-                                </li>
-                                <li>
-                                    <Link href="/case-studies" className="text-sm text-foreground/70 hover:text-primary transition-colors">
-                                        Case Studies
-                                    </Link>
-                                </li>
-                                <li>
-                                    <Link href="/about" className="text-sm text-foreground/70 hover:text-primary transition-colors">
-                                        About Us
-                                    </Link>
-                                </li>
-                                <li>
-                                    <Link href="/contact" className="text-sm text-foreground/70 hover:text-primary transition-colors">
-                                        Contact
-                                    </Link>
-                                </li>
+                                <li><Link href="/" className="text-sm text-foreground/70 hover:text-primary transition-colors">Home</Link></li>
+                                <li><Link href="/services" className="text-sm text-foreground/70 hover:text-primary transition-colors">Services</Link></li>
+                                <li><Link href="/gallery" className="text-sm text-foreground/70 hover:text-primary transition-colors">Gallery</Link></li>
+                                <li><Link href="/case-studies" className="text-sm text-foreground/70 hover:text-primary transition-colors">Case Studies</Link></li>
+                                <li><Link href="/about" className="text-sm text-foreground/70 hover:text-primary transition-colors">About Us</Link></li>
+                                <li><Link href="/contact" className="text-sm text-foreground/70 hover:text-primary transition-colors">Contact</Link></li>
                             </ul>
                         </div>
                     </Reveal>
@@ -75,26 +55,10 @@ export default function Footer() {
                         <div>
                             <h3 className="font-semibold mb-4">Services</h3>
                             <ul className="space-y-2">
-                                <li>
-                                    <Link href="/services/commercial" className="text-sm text-foreground/70 hover:text-primary transition-colors">
-                                        Commercial Cleaning
-                                    </Link>
-                                </li>
-                                <li>
-                                    <Link href="/services/after-build" className="text-sm text-foreground/70 hover:text-primary transition-colors">
-                                        After-Build Cleaning
-                                    </Link>
-                                </li>
-                                <li>
-                                    <Link href="/services/end-of-tenancy" className="text-sm text-foreground/70 hover:text-primary transition-colors">
-                                        End-of-Tenancy
-                                    </Link>
-                                </li>
-                                <li>
-                                    <Link href="/services/event" className="text-sm text-foreground/70 hover:text-primary transition-colors">
-                                        Event Cleaning
-                                    </Link>
-                                </li>
+                                <li><Link href="/services/commercial" className="text-sm text-foreground/70 hover:text-primary transition-colors">Commercial Cleaning</Link></li>
+                                <li><Link href="/services/after-build" className="text-sm text-foreground/70 hover:text-primary transition-colors">After-Build Cleaning</Link></li>
+                                <li><Link href="/services/end-of-tenancy" className="text-sm text-foreground/70 hover:text-primary transition-colors">End-of-Tenancy</Link></li>
+                                <li><Link href="/services/serviced-accommodation" className="text-sm text-foreground/70 hover:text-primary transition-colors">Serviced Accommodation</Link></li>
                             </ul>
                         </div>
                     </Reveal>
@@ -118,17 +82,14 @@ export default function Footer() {
                                     <Mail size={16} />
                                     hello@pureworkspaces.uk
                                 </a>
-                                <div className="flex items-center gap-2 text-sm text-foreground/70">
-                                    <MapPin size={16} />
-                                    Prama House, 267 Banbury Road, Oxford, OX2 7HT
+                                <div className="flex items-start gap-2 text-sm text-foreground/70">
+                                    <MapPin size={16} className="mt-1 shrink-0" />
+                                    <span>
+                                        Prama House, 267 Banbury Road,<br />
+                                        Oxford, OX2 7HT
+                                    </span>
                                 </div>
                             </div>
-
-                            <Link href="/contact">
-                                <Button variant="outline" className="w-full justify-between">
-                                    Request a quote <ArrowRight className="h-4 w-4" />
-                                </Button>
-                            </Link>
                         </div>
                     </Reveal>
                 </div>

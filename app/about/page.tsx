@@ -12,30 +12,30 @@ export default function AboutPage() {
     const values = [
         {
             icon: Heart,
-            title: 'Health First',
-            description: 'We prioritize the health and wellbeing of everyone in the spaces we clean.',
+            title: 'Foundation of Calm',
+            description: 'Cleanliness is not just a service, it is a foundation for clarity, confidence, and calm.',
         },
         {
             icon: Users,
-            title: 'Professional Team',
-            description: 'Our team combines expertise, training, and dedication to excellence.',
+            title: 'Thorough & Precise',
+            description: 'The water droplet represents purity and precision; being thorough matters.',
         },
         {
             icon: Target,
-            title: 'Attention to Detail',
-            description: 'We never compromise on quality, ensuring every corner is pristine.',
+            title: 'Safety & Wellbeing',
+            description: 'Rooted in public health nursing, where cleanliness is linked to safety and wellbeing.',
         },
         {
             icon: Zap,
             title: 'Reliability',
-            description: 'You can count on us to deliver consistent, dependable service every time.',
+            description: 'Consistent, dependable service that becomes part of your everyday operations.',
         },
     ]
 
     const serviceAreas = [
-        { name: 'Swindon', description: 'Our headquarters and primary service area' },
-        { name: 'Oxford', description: 'Comprehensive coverage across the city' },
-        { name: 'Surrounding Areas', description: 'Extended service to nearby communities' },
+        { name: 'Swindon & Oxford', description: 'Core service hubs with daily coverage' },
+        { name: 'Abingdon & Wantage', description: 'Reliable mobile teams in surroundings' },
+        { name: 'Milton & Didcot', description: 'Professional cleaning for business parks' },
     ]
 
     return (
@@ -47,7 +47,7 @@ export default function AboutPage() {
                     <Reveal className="mx-auto max-w-3xl text-center">
                         <h1 className="text-5xl md:text-6xl font-bold tracking-tight text-balance">About Pure Work Spaces</h1>
                         <p className="mt-5 text-lg md:text-xl text-foreground/70 text-balance">
-                            Cleanliness is not just a service, it is a foundation for clarity, confidence, and calm.
+                            Founded on a mission to transform workspaces and improve lives through professional cleaning and care.
                         </p>
                         <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center">
                             <Link href="/services">
@@ -74,13 +74,13 @@ export default function AboutPage() {
                                 <h2 className="text-4xl font-bold text-foreground mb-6">Our Story</h2>
                                 <div className="space-y-4 text-foreground/80 leading-relaxed">
                                     <p>
-                                        Pure Work Spaces Ltd was built on a simple idea: that the spaces we work and live in shape how we feel, think, and perform. Cleanliness is not just a service, it is a foundation for clarity, confidence, and calm.
+                                        The founder of Pure Work Spaces Ltd comes from a background in Public Health Nursing, with earlier experience in Intensive Care, where cleanliness was never just a task, but something closely linked to safety, wellbeing, and how people feel day to day.
                                     </p>
                                     <p>
-                                        The founder comes from a background in Public Health Nursing, with earlier experience in Intensive Care, where cleanliness was never just a task, but something closely linked to safety, wellbeing, and how people feel day to day.
+                                        Starting this business came from a genuine enjoyment of cleaning, and from recognising that it is often undervalued or rushed. When done properly, it has a real impact, not only physically, but mentally. A clean space helps people feel calmer, think more clearly, and perform at their best.
                                     </p>
                                     <p>
-                                        "Pure" is not just a name. It reflects a commitment to doing things properly, with care, attention, and consistency. Being thorough matters, and where possible, going beyond what is expected is simply part of the standard.
+                                        “Pure” is not just a name. It reflects a commitment to doing things properly, with care, attention, and consistency. Being thorough matters, and where possible, going beyond what is expected is simply part of the standard.
                                     </p>
                                 </div>
                             </Reveal>
@@ -211,3 +211,5 @@ export default function AboutPage() {
         </motion.div>
     )
 }
+
+

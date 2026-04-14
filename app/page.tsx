@@ -13,6 +13,7 @@ import {
   Building2,
   Hammer,
   KeyRound,
+  Hotel,
   PartyPopper,
   ShieldCheck,
   Timer,
@@ -26,70 +27,70 @@ import GallerySection from '@/components/gallery/gallery-section'
 export default function Home() {
   const services = [
     {
-      title: 'Commercial Cleaning',
-      description: 'Professional cleaning for offices, retail spaces, and corporate environments.',
+      title: 'Commercial & Office',
+      description: 'Reliable, high-quality cleaning tailored to your environment, supporting productivity and hygiene.',
       icon: Building2,
     },
     {
-      title: 'After-Build Cleaning',
-      description: 'Complete post-construction cleaning to prepare spaces for occupancy.',
+      title: 'After Build Cleans',
+      description: 'Thorough cleaning to transform construction sites into clean, safe, and ready-to-use spaces.',
       icon: Hammer,
     },
     {
-      title: 'End-of-Tenancy',
-      description: 'Thorough cleaning for property transitions and tenant handovers.',
+      title: 'End of Tenancy',
+      description: 'Comprehensive cleaning to ensure properties are left in excellent condition for smooth transitions.',
       icon: KeyRound,
     },
     {
-      title: 'Event Cleaning',
-      description: 'Pre and post-event cleaning for conferences, functions, and gatherings.',
-      icon: PartyPopper,
+      title: 'Serviced Accommodation',
+      description: 'High-standard cleaning and restocking to ensure properties are guest-ready and maintain great reviews.',
+      icon: Hotel,
     },
   ]
 
   const benefits = [
     {
       icon: Heart,
-      title: 'Foundation for Calm',
+      title: 'Health & Wellbeing',
       description: 'Cleanliness is not just a service, it is a foundation for clarity, confidence, and calm.',
     },
     {
       icon: Users,
-      title: 'Nursing Expertise',
-      description: 'Built on a background in Public Health Nursing where cleaning is linked to safety and wellbeing.',
+      title: 'Trust & Precision',
+      description: 'Our identity reflects purity and precision, with movement, consistency, and care.',
     },
     {
       icon: Sparkles,
-      title: 'Precision & Care',
-      description: 'A commitment to doing things properly, with care, attention, and consistency.',
+      title: 'Maintain Standards',
+      description: 'We create environments where people can focus, operate effectively, and feel at ease.',
     },
   ]
 
   const testimonials = [
     {
       name: 'Business Owner',
-      company: 'Local Business',
-      text: "This place is a much more pleasant place to be since you have started.",
+      company: 'Local Partner',
+      text: 'This place is a much more pleasant place to be since you have started.',
       rating: 5,
     },
     {
       name: 'Managing Director',
       company: 'Corporate Client',
-      text: "Wow, what a difference.",
+      text: 'Wow, what a difference. The fact that it has been 2 weeks and the place still looks great is a testament to your cleaning.',
       rating: 5,
     },
     {
-      name: 'Domestic Client',
-      company: 'Resident',
-      text: "You did an amazing job today! Many thanks.",
+      name: 'Scientist',
+      company: 'Lab Facility',
+      text: 'This place is so much cleaner now. When I walk into the room I notice the difference.',
       rating: 5,
     },
   ]
 
   const trust = [
-    { icon: ShieldCheck, title: 'Deep Green Trust', description: 'Our identity reflects stability, trust, and reassurance.' },
-    { icon: Timer, title: 'Seamless Service', description: 'Cleaning when done properly is not disruptive, but seamless.' },
-    { icon: Leaf, title: 'Pure Standards', description: 'Going beyond what is expected is simply part of our standard.' },
+    { icon: ShieldCheck, title: 'Trusted & Vetted', description: 'Consistent teams, clear checklists, quality checks.' },
+    { icon: Timer, title: 'Reliable Scheduling', description: 'Early mornings, evenings, and weekends when needed.' },
+    { icon: Leaf, title: 'Safe Products', description: 'Professional-grade products with eco options on request.' },
   ]
 
   return (
@@ -109,13 +110,13 @@ export default function Home() {
             >
               <motion.div variants={itemVariants} className="inline-flex items-center gap-2 rounded-full border border-border/70 bg-background/70 px-4 py-2 text-sm text-foreground/70">
                 <Sparkles className="h-4 w-4 text-primary" />
-                Professional cleaning for healthier workspaces
+                Pure Spaces. Peace of Mind.
               </motion.div>
               <motion.h1 variants={itemVariants} className="mt-6 text-5xl md:text-6xl font-bold tracking-tight text-balance">
-                Pure Spaces. Peace of Mind.
+                The spaces we work and live in shape how we feel.
               </motion.h1>
               <motion.p variants={itemVariants} className="mt-5 text-lg md:text-xl text-foreground/70 text-balance max-w-2xl">
-                Cleanliness is not just a service, it is a foundation for clarity, confidence, and calm. Serving Swindon, Oxford, and surrounding areas.
+                Professional cleaning services built on the foundation of clarity, confidence, and calm. Serving Swindon, Oxford, and surrounding areas.
               </motion.p>
               <motion.div variants={itemVariants} className="mt-8 flex flex-col sm:flex-row gap-4">
                 <Link href="/contact">

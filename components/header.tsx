@@ -27,7 +27,11 @@ export default function Header() {
             <div className="container mx-auto px-4 h-16 flex items-center justify-between">
                 {/* Logo */}
                 <Link href="/" className="flex items-center gap-2 hover:opacity-80 transition-opacity">
-                    <img src="/PWS-Logo/PWS-PNG-files/PWS-Primary-logo/PWS Primary Logo - White@0.5x.png" alt="Pure Work Spaces" className="h-10 w-auto" />
+                    <img
+                        src="/PWS-Logo/PWS-PNG-files/PWS-wordmark-png/PWS wordmark - dark green@0.5x.png"
+                        alt="Pure Work Spaces"
+                        className="h-8 w-auto md:h-10"
+                    />
                 </Link>
 
                 {/* Desktop Navigation */}

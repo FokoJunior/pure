@@ -22,59 +22,59 @@ export default function ServicesPage() {
     const services = [
         {
             slug: 'commercial',
-            title: 'Commercial Cleaning',
-            description: 'Whether your space is an office, laboratory, factory, healthcare setting, educational facility, or tech hub, we provide reliable, high-quality cleaning tailored to your environment.',
+            title: 'Commercial & Office',
+            description: 'Reliable, high-quality cleaning tailored to your environment, focus on consistency and hygiene.',
             icon: Building2,
-            details: 'Our focus is on consistency, hygiene, and creating a professional space that supports productivity and leaves a lasting impression.',
-            benefits: ['Office & Lab Cleaning', 'Healthcare & Education', 'Factory & Tech Hubs', 'Consistent Hygiene'],
+            details: 'Whether your space is an office, laboratory, factory, or tech hub, we provide cleaning that supports productivity and leaves a lasting impression.',
+            benefits: ['Professional environment support', 'Consistency & hygiene focus', 'Tailored cleaning routines', 'High-quality equipment'],
         },
         {
             slug: 'after-build',
             title: 'After Build Cleans',
-            description: 'We deliver thorough after-build cleaning to transform construction sites into clean, safe, and ready-to-use spaces.',
+            description: 'Thorough cleaning to transform construction sites into ready-to-use spaces.',
             icon: Hammer,
             details: 'From dust removal to detailed finishing touches, we ensure every surface is properly prepared for handover or occupancy.',
-            benefits: ['Dust Removal', 'Detailed Finishing', 'Site Preparation', 'Handover Ready'],
+            benefits: ['Dust & debris removal', 'Detailed finishing touches', 'Site transformation', 'Safe & ready usage'],
         },
         {
             slug: 'end-of-tenancy',
-            title: 'End of Tenancy Cleans',
-            description: 'Our end of tenancy cleaning service helps ensure properties are left in excellent condition.',
+            title: 'End of Tenancy',
+            description: 'Comprehensive cleaning ensuring properties meet landlord or agent expectations.',
             icon: KeyRound,
-            details: 'We carry out a comprehensive clean of all areas, supporting smooth transitions between tenants and helping meet landlord or letting agent expectations.',
-            benefits: ['Comprehensive Clean', 'Landlord Approved', 'Smooth Transitions', 'All Areas Covered'],
+            details: 'We carry out a comprehensive clean of all areas, supporting smooth transitions between tenants.',
+            benefits: ['Comprehensive deep clean', 'Smooth transitions', 'Landlord standard ready', 'Full property coverage'],
         },
         {
             slug: 'serviced-accommodation',
             title: 'Serviced Accommodation',
-            description: 'We provide reliable, high-standard cleaning for serviced accommodation, ensuring every property is guest-ready at all times.',
+            description: 'Reliable, high-standard cleaning for guest-ready properties.',
             icon: Hotel,
-            details: 'From changeovers to restocking essentials, our team focuses on detail, presentation, and consistency to support excellent guest experiences.',
-            benefits: ['Guest-Ready Always', 'Restocking Essentials', 'Detailed Presentation', 'Consistency'],
+            details: 'From changeovers to restocking essentials, our team focuses on detail, presentation, and consistency to support excellent guest reviews.',
+            benefits: ['Guest-ready changeovers', 'Restocking essentials', 'Detail & presentation focus', 'Review support'],
         },
         {
             slug: 'event',
             title: 'Event Cleaning',
-            description: 'We provide efficient and responsive cleaning services for events of all sizes, both during and after the occasion.',
+            description: 'Efficient and responsive cleaning for events of all sizes, during and after.',
             icon: PartyPopper,
-            details: 'Our team ensures spaces remain clean, presentable, and ready for use, helping your event run smoothly from start to finish.',
-            benefits: ['All Event Sizes', 'During & After event', 'Efficient Service', 'Seamless Execution'],
+            details: 'Our team ensures spaces remain clean, presentable, and ready for use, helping your event run smoothly.',
+            benefits: ['Responsive event cleanup', 'Presentable environment', 'During & after event support', 'Efficient turnarounds'],
         },
         {
-            slug: 'hotel-holiday',
+            slug: 'hotel',
             title: 'Hotel / Holiday Lets',
-            description: 'We support hotels and holiday lets with consistent, high-quality cleaning that meets guest expectations.',
+            description: 'Consistent, high-quality cleaning meeting guest expectations and hygiene.',
             icon: Building,
-            details: 'From room preparation to communal areas, we focus on presentation, hygiene, and attention to detail to help maintain strong reviews.',
-            benefits: ['Room Preparation', 'Communal Areas', 'Hygiene Focus', 'Review Support'],
+            details: 'From room preparation to communal areas, we focus on presentation and attention to detail to help maintain strong reviews.',
+            benefits: ['Room preparation', 'Communal area care', 'Hygiene focus', 'Guest satisfaction support'],
         },
         {
             slug: 'domestic',
             title: 'Domestic Clients',
-            description: 'We offer dependable and discreet cleaning services for homes, designed to maintain a clean, comfortable living environment.',
+            description: 'Dependable and discreet cleaning services for comfortable living.',
             icon: House,
-            details: 'With attention to detail and flexible scheduling, we help you enjoy your space without the stress of upkeep.',
-            benefits: ['Dependable & Discreet', 'Flexible Scheduling', 'Comfortable Living', 'No Stress Upkeep'],
+            details: 'We maintain a clean, comfortable living environment with attention to detail and flexible scheduling.',
+            benefits: ['Discreet home cleaning', 'Flexible scheduling', 'Stress-free upkeep', 'Personalized care'],
         },
     ]
 
@@ -166,3 +166,7 @@ export default function ServicesPage() {
         </motion.div>
     )
 }
+
+
+
+
