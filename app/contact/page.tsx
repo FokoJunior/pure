@@ -198,7 +198,7 @@ export default function ContactPage() {
                           name="phone"
                           value={formData.phone}
                           onChange={handleChange}
-                          placeholder="+44 (0) 1234 567 890"
+                          placeholder="07300864523"
                           className="w-full"
                         />
                       </StaggerItem>

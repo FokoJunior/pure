@@ -50,46 +50,46 @@ export default function Home() {
   const benefits = [
     {
       icon: Heart,
-      title: 'Health & Wellbeing',
-      description: 'Clean spaces improve employee wellbeing and productivity',
+      title: 'Foundation for Calm',
+      description: 'Cleanliness is not just a service, it is a foundation for clarity, confidence, and calm.',
     },
     {
       icon: Users,
-      title: 'Expert Team',
-      description: 'Founded by public health nursing expertise with comprehensive training',
+      title: 'Nursing Expertise',
+      description: 'Built on a background in Public Health Nursing where cleaning is linked to safety and wellbeing.',
     },
     {
       icon: Sparkles,
-      title: 'Professional Standards',
-      description: 'Consistent, high-quality service across all our clients',
+      title: 'Precision & Care',
+      description: 'A commitment to doing things properly, with care, attention, and consistency.',
     },
   ]
 
   const testimonials = [
     {
-      name: 'Sarah Johnson',
-      company: 'Tech Solutions Ltd',
-      text: 'Pure Work Spaces transformed our office environment. Our team immediately noticed the difference in cleanliness and air quality.',
+      name: 'Business Owner',
+      company: 'Local Business',
+      text: "This place is a much more pleasant place to be since you have started.",
       rating: 5,
     },
     {
-      name: 'James Mitchell',
-      company: 'Oxford Medical Centre',
-      text: 'Professional, reliable, and thorough. They understand the importance of hygiene in healthcare settings.',
+      name: 'Managing Director',
+      company: 'Corporate Client',
+      text: "Wow, what a difference.",
       rating: 5,
     },
     {
-      name: 'Emma Richardson',
-      company: 'Event Management Pro',
-      text: 'Exceptional service before and after our events. They go above and beyond every single time.',
+      name: 'Domestic Client',
+      company: 'Resident',
+      text: "You did an amazing job today! Many thanks.",
       rating: 5,
     },
   ]
 
   const trust = [
-    { icon: ShieldCheck, title: 'Trusted & Vetted', description: 'Consistent teams, clear checklists, quality checks.' },
-    { icon: Timer, title: 'Reliable Scheduling', description: 'Early mornings, evenings, and weekends when needed.' },
-    { icon: Leaf, title: 'Safe Products', description: 'Professional-grade products with eco options on request.' },
+    { icon: ShieldCheck, title: 'Deep Green Trust', description: 'Our identity reflects stability, trust, and reassurance.' },
+    { icon: Timer, title: 'Seamless Service', description: 'Cleaning when done properly is not disruptive, but seamless.' },
+    { icon: Leaf, title: 'Pure Standards', description: 'Going beyond what is expected is simply part of our standard.' },
   ]
 
   return (
@@ -112,10 +112,10 @@ export default function Home() {
                 Professional cleaning for healthier workspaces
               </motion.div>
               <motion.h1 variants={itemVariants} className="mt-6 text-5xl md:text-6xl font-bold tracking-tight text-balance">
-                Transform your workspace into a place people love to work.
+                Pure Spaces. Peace of Mind.
               </motion.h1>
               <motion.p variants={itemVariants} className="mt-5 text-lg md:text-xl text-foreground/70 text-balance max-w-2xl">
-                Commercial cleaning services built around wellbeing, consistency, and professional standards. Serving Swindon, Oxford, and surrounding areas.
+                Cleanliness is not just a service, it is a foundation for clarity, confidence, and calm. Serving Swindon, Oxford, and surrounding areas.
               </motion.p>
               <motion.div variants={itemVariants} className="mt-8 flex flex-col sm:flex-row gap-4">
                 <Link href="/contact">
