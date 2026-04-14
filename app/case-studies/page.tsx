@@ -5,7 +5,6 @@ import { motion } from 'framer-motion'
 import { Button } from '@/components/ui/button'
 import { Card } from '@/components/ui/card'
 import { ArrowRight, ArrowUpRight, Building2, HeartPulse, Sparkles, Timer } from 'lucide-react'
-import { pageVariants } from '@/lib/animations'
 import { Reveal, Stagger, StaggerItem } from '@/components/motion/reveal'
 
 type CaseStudy = {
@@ -65,7 +64,7 @@ const CASE_STUDIES: CaseStudy[] = [
 
 export default function CaseStudiesPage() {
   return (
-    <motion.div initial="initial" animate="animate" exit="exit" variants={pageVariants}>
+    <div>
       {/* Hero */}
       <section className="relative overflow-hidden bg-linear-to-b from-primary/10 via-background to-background">
         <div className="absolute inset-0 opacity-35 bg-[radial-gradient(ellipse_80%_60%_at_50%_0%,rgba(61,109,77,0.35),rgba(0,0,0,0))]" />
@@ -183,7 +182,7 @@ export default function CaseStudiesPage() {
           </Reveal>
         </div>
       </section>
-    </motion.div>
+    </div>
   )
 }
 

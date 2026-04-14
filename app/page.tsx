@@ -19,7 +19,6 @@ import {
   Timer,
   Leaf,
 } from 'lucide-react'
-import { containerVariants, itemVariants, pageVariants } from '@/lib/animations'
 import { Reveal, Stagger, StaggerItem } from '@/components/motion/reveal'
 import { CountUp } from '@/components/motion/count-up'
 import GallerySection from '@/components/gallery/gallery-section'
@@ -94,7 +93,7 @@ export default function Home() {
   ]
 
   return (
-    <motion.div initial="initial" animate="animate" exit="exit" variants={pageVariants}>
+    <div>
       {/* Hero Section */}
       <section className="relative overflow-hidden bg-linear-to-b from-primary/10 via-background to-background">
         <div className="absolute inset-0 opacity-35 bg-[radial-gradient(ellipse_80%_60%_at_50%_0%,rgba(61,109,77,0.35),rgba(0,0,0,0))]" />
@@ -102,23 +101,27 @@ export default function Home() {
 
         <div className="container mx-auto px-4 relative py-20 md:py-28">
           <div className="mx-auto max-w-6xl grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
-            <motion.div
-              className="lg:col-span-7"
-              variants={containerVariants}
-              initial="hidden"
-              animate="visible"
-            >
-              <motion.div variants={itemVariants} className="inline-flex items-center gap-2 rounded-full border border-border/70 bg-background/70 px-4 py-2 text-sm text-foreground/70">
-                <Sparkles className="h-4 w-4 text-primary" />
-                Pure Spaces. Peace of Mind.
-              </motion.div>
-              <motion.h1 variants={itemVariants} className="mt-6 text-5xl md:text-6xl font-bold tracking-tight text-balance">
-                The spaces we work and live in shape how we feel.
-              </motion.h1>
-              <motion.p variants={itemVariants} className="mt-5 text-lg md:text-xl text-foreground/70 text-balance max-w-2xl">
-                Professional cleaning services built on the foundation of clarity, confidence, and calm. Serving Swindon, Oxford, and surrounding areas.
-              </motion.p>
-              <motion.div variants={itemVariants} className="mt-8 flex flex-col sm:flex-row gap-4">
+            <div className="lg:col-span-7">
+              <Reveal delay={0.1}>
+                <div className="inline-flex items-center gap-2 rounded-full border border-border/70 bg-background/70 px-4 py-2 text-sm text-foreground/70">
+                  <Sparkles className="h-4 w-4 text-primary" />
+                  Pure Spaces. Peace of Mind.
+                </div>
+              </Reveal>
+
+              <Reveal delay={0.2}>
+                <h1 className="mt-6 text-5xl md:text-6xl font-bold tracking-tight text-balance">
+                  The spaces we work and live in shape how we feel.
+                </h1>
+              </Reveal>
+
+              <Reveal delay={0.3}>
+                <p className="mt-5 text-lg md:text-xl text-foreground/70 text-balance max-w-2xl">
+                  Professional cleaning services built on the foundation of clarity, confidence, and calm. Serving Swindon, Oxford, and surrounding areas.
+                </p>
+              </Reveal>
+
+              <Reveal delay={0.4} className="mt-8 flex flex-col sm:flex-row gap-4">
                 <Link href="/contact">
                   <Button size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground shadow-sm hover:shadow-md transition-shadow">
                     Request Free Quote <ArrowRight className="ml-2 h-4 w-4" />
@@ -129,8 +132,9 @@ export default function Home() {
                     Explore Services
                   </Button>
                 </Link>
-              </motion.div>
-              <motion.div variants={itemVariants} className="mt-10 grid grid-cols-1 sm:grid-cols-3 gap-3 max-w-2xl">
+              </Reveal>
+
+              <Reveal delay={0.5} className="mt-10 grid grid-cols-1 sm:grid-cols-3 gap-3 max-w-2xl">
                 {trust.map((t) => (
                   <div key={t.title} className="rounded-xl border border-border/70 bg-background/70 p-4">
                     <t.icon className="h-5 w-5 text-primary" />
@@ -138,8 +142,8 @@ export default function Home() {
                     <div className="mt-1 text-xs text-foreground/60 leading-relaxed">{t.description}</div>
                   </div>
                 ))}
-              </motion.div>
-            </motion.div>
+              </Reveal>
+            </div>
 
             <div className="lg:col-span-5">
               <Reveal className="relative">
@@ -338,7 +342,7 @@ export default function Home() {
           </Reveal>
         </div>
       </section>
-    </motion.div>
+    </div>
   )
 }
 

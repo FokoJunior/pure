@@ -17,7 +17,6 @@ import {
   Building,
   House,
 } from 'lucide-react'
-import { pageVariants } from '@/lib/animations'
 import { Reveal, Stagger, StaggerItem } from '@/components/motion/reveal'
 import { CountUp } from '@/components/motion/count-up'
 
@@ -192,7 +191,7 @@ export default function ServiceDetailPage() {
   }))
 
   return (
-    <motion.div initial="initial" animate="animate" exit="exit" variants={pageVariants}>
+    <div>
       {/* Hero Section */}
       <section className="relative overflow-hidden bg-linear-to-b from-primary/10 via-background to-background">
         <div className="absolute inset-0 opacity-35 bg-[radial-gradient(ellipse_80%_60%_at_50%_0%,rgba(61,109,77,0.35),rgba(0,0,0,0))]" />
@@ -274,7 +273,7 @@ export default function ServiceDetailPage() {
               <h2>Related Services</h2>
             </Reveal>
             <Stagger className="grid grid-cols-1 md:grid-cols-2 gap-8">
-              {relatedServicesData.map((related) => (
+              {relatedServicesData.map((related: any) => (
                 <StaggerItem key={related.slug}>
                   <Card className="p-6 bg-card border-border/70 h-full hover:shadow-lg transition-shadow group">
                     <div className="rounded-2xl bg-primary/10 p-3 w-fit mb-4">
@@ -311,7 +310,7 @@ export default function ServiceDetailPage() {
           </Reveal>
         </div>
       </section>
-    </motion.div>
+    </div>
   )
 }
 
