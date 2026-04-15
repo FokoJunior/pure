@@ -5,6 +5,7 @@ import { ReactNode } from 'react'
 import './globals.css'
 import Header from '@/components/header'
 import Footer from '@/components/footer'
+import ScrollToTop from '@/components/scroll-to-top'
 import Providers from '@/components/providers'
 
 const inter = Inter({ subsets: ['latin'], variable: '--font-inter' })
@@ -48,10 +49,10 @@ export default function RootLayout({
                     <Header />
                     <main>{children}</main>
                     <Footer />
+                    <ScrollToTop />
                 </Providers>
                 {process.env.NODE_ENV === 'production' && <Analytics />}
             </body>
         </html>
     )
 }
-
