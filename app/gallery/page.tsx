@@ -13,7 +13,7 @@ export default async function GalleryPage() {
     <div className="bg-[#f4efe6] min-h-screen">
       {/* Hero Section */}
       <section className="relative overflow-hidden bg-[#283524] text-[#f4efe6] py-24">
-        <div className="absolute inset-0 opacity-15 bg-[url('/images/IMG_20260331_180412.jpg')] bg-cover bg-center" />
+        <div className="absolute inset-0 opacity-15 bg-[url('/PWS-Stock-images-JPG/4.jpg')] bg-cover bg-center" />
         <div className="container relative z-10 mx-auto px-4 text-center">
           <Reveal className="mx-auto max-w-3xl">
             <div className="inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-4 py-2 text-sm text-white/80 mb-8 uppercase tracking-widest font-bold">

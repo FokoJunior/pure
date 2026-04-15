@@ -11,7 +11,7 @@ export type GalleryImage = {
 const SUPPORTED_EXT = new Set(['.png', '.jpg', '.jpeg', '.webp', '.avif', '.gif', '.svg'])
 
 export async function getGalleryImages(): Promise<GalleryImage[]> {
-  const dir = path.join(process.cwd(), 'public', 'images')
+  const dir = path.join(process.cwd(), 'public', 'PWS-Stock-images-JPG')
 
   let entries: string[] = []
   try {
@@ -28,7 +28,7 @@ export async function getGalleryImages(): Promise<GalleryImage[]> {
     const base = name.replace(/\.[^.]+$/, '')
     const alt = base.replace(/[-_]+/g, ' ').trim()
     return {
-      src: `/images/${name}`,
+      src: `/PWS-Stock-images-JPG/${name}`,
       alt: alt.length ? alt : 'Gallery image',
     }
   })
