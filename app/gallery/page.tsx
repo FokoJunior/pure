@@ -10,44 +10,52 @@ export default async function GalleryPage() {
   const images = await getGalleryImages()
 
   return (
-    <div>
-      <section className="relative overflow-hidden bg-linear-to-b from-primary/10 via-background to-background">
-        <div className="absolute inset-0 opacity-35 bg-[radial-gradient(ellipse_80%_60%_at_50%_0%,rgba(61,109,77,0.35),rgba(0,0,0,0))]" />
-        <div className="container mx-auto px-4 py-18 md:py-22">
-          <Reveal className="mx-auto max-w-3xl text-center">
-            <div className="inline-flex items-center gap-2 rounded-full border border-border/70 bg-background/70 px-4 py-2 text-sm text-foreground/70">
-              <Images className="h-4 w-4 text-primary" />
+    <div className="bg-[#f4efe6] min-h-screen">
+      {/* Hero Section */}
+      <section className="relative overflow-hidden bg-[#283524] text-[#f4efe6] py-24">
+        <div className="absolute inset-0 opacity-15 bg-[url('/images/IMG_20260331_180412.jpg')] bg-cover bg-center" />
+        <div className="container relative z-10 mx-auto px-4 text-center">
+          <Reveal className="mx-auto max-w-3xl">
+            <div className="inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-4 py-2 text-sm text-white/80 mb-8 uppercase tracking-widest font-bold">
+              <Images className="h-4 w-4" />
               Our work in pictures
             </div>
-            <h1 className="mt-6 text-5xl md:text-6xl font-bold tracking-tight text-balance">Gallery</h1>
-            <p className="mt-5 text-lg md:text-xl text-foreground/70 text-balance">
-              Browse highlights from recent work. Click any photo to zoom.
+            <h1 className="text-5xl md:text-7xl font-heading font-bold tracking-tight mb-6">Gallery</h1>
+            <p className="text-xl md:text-2xl font-sans opacity-90 max-w-2xl mx-auto mb-10">
+              A visual record of our commitment to responsibility, resilience, and care in every workspace we serve.
             </p>
-            <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center">
-              <Link href="/contact">
-                <Button size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground shadow-sm hover:shadow-md transition-shadow">
-                  Request a quote <ArrowRight className="ml-2 h-4 w-4" />
-                </Button>
-              </Link>
-              <Link href="/services">
-                <Button size="lg" variant="outline" className="border-border/70 bg-background/60">
-                  Explore services
-                </Button>
-              </Link>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <Button size="lg" className="bg-[#f4efe6] text-[#283524] hover:bg-white uppercase font-bold tracking-widest text-xs px-8 h-12" asChild>
+                <Link href="/#contact">Request a quote <ArrowRight className="ml-2 h-4 w-4" /></Link>
+              </Button>
+              <Button size="lg" variant="outline" className="border-white/20 text-white hover:bg-white/10 uppercase font-bold tracking-widest text-xs px-8 h-12" asChild>
+                <Link href="/">Back to Home</Link>
+              </Button>
             </div>
           </Reveal>
         </div>
       </section>
 
-      <section className="py-20 bg-background">
+      {/* Gallery Grid Section */}
+      <section className="py-24">
         <div className="container mx-auto px-4">
+          <Reveal className="mb-16">
+            <div className="max-w-2xl text-[#283524]">
+              <h2 className="text-3xl md:text-4xl font-heading font-bold mb-4">Precision & Excellence</h2>
+              <p className="text-lg opacity-80">
+                From commercial offices to industrial warehouses, we maintain the highest standards of cleanliness and order.
+              </p>
+            </div>
+          </Reveal>
+
           {images.length ? (
-            <GalleryGrid images={images} columns={4} />
+            <div className="reveal-stagger">
+              <GalleryGrid images={images} columns={4} />
+            </div>
           ) : (
-            <Card className="p-8 border-border/70 bg-card">
-              <div className="text-sm text-foreground/70 leading-relaxed">
-                Aucune image trouvée dans <code className="px-1 py-0.5 rounded bg-foreground/5">public/images</code>.
-                Ajoute tes photos là-bas et recharge cette page.
+            <Card className="p-12 border-[#283524]/10 bg-white/50 text-center">
+              <div className="text-lg text-[#283524]/70 leading-relaxed max-w-md mx-auto font-medium">
+                Our portfolio is currently being updated. Please check back soon to see our latest transformations.
               </div>
             </Card>
           )}
@@ -56,4 +64,3 @@ export default async function GalleryPage() {
     </div>
   )
 }
-

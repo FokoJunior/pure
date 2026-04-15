@@ -45,7 +45,7 @@ export default function GalleryGrid({ images, className, columns = 3, limit }: G
               setActive(img)
               setOpen(true)
             }}
-            className="group text-left rounded-2xl border border-border/70 bg-card overflow-hidden hover:shadow-lg transition-shadow"
+            className="group text-left rounded-none border border-[#283524]/10 bg-white overflow-hidden hover:shadow-xl transition-shadow"
           >
             <AspectRatio ratio={4 / 3}>
               <Image
@@ -67,21 +67,21 @@ export default function GalleryGrid({ images, className, columns = 3, limit }: G
           if (!v) setActive(null)
         }}
       >
-        <DialogContent className="max-w-4xl p-3 sm:p-4" showCloseButton>
+        <DialogContent className="max-w-4xl p-3 sm:p-4 bg-[#f4efe6] border-none" showCloseButton>
           <DialogTitle className="sr-only">Gallery image</DialogTitle>
           {active && (
-            <div className="rounded-lg overflow-hidden border border-border/70 bg-background">
+            <div className="rounded-none overflow-hidden border border-[#283524]/10 bg-white">
               <AspectRatio ratio={16 / 10}>
                 <Image
                   src={active.src}
                   alt={active.alt}
                   fill
                   sizes="(max-width: 1024px) 100vw, 1024px"
-                  className="object-contain bg-background"
+                  className="object-contain bg-white"
                   priority
                 />
               </AspectRatio>
-              <div className="px-4 py-3 text-sm text-foreground/70">{active.alt}</div>
+              <div className="px-6 py-4 text-sm font-sans font-medium text-[#283524]">{active.alt}</div>
             </div>
           )}
         </DialogContent>
