@@ -4,40 +4,39 @@
 @custom-variant dark (&:is(.dark *));
 
 :root {
-  /* Sage & Stone palette (from provided swatch) */
-  --background: #283524;
-  --foreground: #2c2c2c;
+  /* Sage & Stone palette 2026 */
+  --background: #f4efe6;
+  /* Primary Ivory */
+  --foreground: #283524;
+  /* Dark Green */
   --card: #f4efe6;
   --card-foreground: #283524;
-  --popover: #f6f7f4;
-  --popover-foreground: #2c2c2c;
+  --popover: #f4efe6;
+  --popover-foreground: #283524;
   --primary: #283524;
-  --primary-foreground: #f6f7f4;
-  --secondary: #d3e0cf;
+  --primary-foreground: #f4efe6;
+  --secondary: #d3decf;
+  /* Sage */
   --secondary-foreground: #283524;
   --muted: #d0cfcc;
+  /* Warm Gray */
   --muted-foreground: #283524;
-  --accent: #d3e0cf;
-  --accent-foreground: #283524;
+  --accent: #2c2c2c;
+  /* Charcoal */
+  --accent-foreground: #d3decf;
   --destructive: oklch(0.577 0.245 27.325);
   --destructive-foreground: oklch(0.577 0.245 27.325);
   --border: #d0cfcc;
   --input: #d0cfcc;
   --ring: #283524;
-  --chart-1: oklch(0.42 0.15 160);
-  --chart-2: oklch(0.6 0.118 184.704);
-  --chart-3: oklch(0.398 0.07 227.392);
-  --chart-4: oklch(0.828 0.189 84.429);
-  --chart-5: oklch(0.769 0.188 70.08);
-  --radius: 0.625rem;
-  --sidebar: #f6f7f4;
-  --sidebar-foreground: #2c2c2c;
-  --sidebar-primary: #283524;
-  --sidebar-primary-foreground: #f6f7f4;
-  --sidebar-accent: #d3e0cf;
-  --sidebar-accent-foreground: #283524;
-  --sidebar-border: #d0cfcc;
-  --sidebar-ring: #283524;
+  --radius: 0rem;
+  /* Squarer professional feel */
+
+  /* Additional Palette Mappings for sections */
+  --sage-bg: #d3decf;
+  --sage-fg: #283524;
+  --hunter-bg: #283524;
+  --hunter-fg: #f4efe6;
 }
 
 :root[data-palette='arctic-pine'] {
@@ -142,7 +141,8 @@
      Usage: set <html data-palette="mono-gray">
   */
   --background: #ffffff;
-  --foreground: #111827; /* near-black */
+  --foreground: #111827;
+  /* near-black */
 
   --card: #f9fafb;
   --card-foreground: #111827;
@@ -206,8 +206,9 @@
 }
 
 @theme inline {
-  --font-sans: 'Geist', 'Geist Fallback';
-  --font-mono: 'Geist Mono', 'Geist Mono Fallback';
+  --font-sans: 'Montaser Arabic', 'Inter', sans-serif;
+  --font-heading: 'Clash Display', 'Inter', sans-serif;
+  --font-logo: 'Museo Moderno', sans-serif;
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --color-card: var(--card);
@@ -250,6 +251,7 @@
   * {
     @apply border-border outline-ring/50;
   }
+
   body {
     @apply bg-background text-foreground;
   }
@@ -260,8 +262,14 @@ html {
   scroll-behavior: smooth;
 }
 
+section[id] {
+  scroll-margin-top: 5rem;
+}
+
 /* Button and link transitions */
-button, a, [role="button"] {
+button,
+a,
+[role="button"] {
   @apply transition-all duration-200 ease-out;
 }
 
@@ -272,6 +280,7 @@ button, a, [role="button"] {
       opacity: 0;
       transform: translateY(10px);
     }
+
     to {
       opacity: 1;
       transform: translateY(0);
@@ -283,6 +292,7 @@ button, a, [role="button"] {
       opacity: 0;
       transform: translateY(20px);
     }
+
     to {
       opacity: 1;
       transform: translateY(0);
@@ -294,6 +304,7 @@ button, a, [role="button"] {
       opacity: 0;
       transform: translateX(-20px);
     }
+
     to {
       opacity: 1;
       transform: translateX(0);
@@ -305,6 +316,7 @@ button, a, [role="button"] {
       opacity: 0;
       transform: translateX(20px);
     }
+
     to {
       opacity: 1;
       transform: translateX(0);
@@ -316,6 +328,7 @@ button, a, [role="button"] {
       opacity: 0;
       transform: scale(0.95);
     }
+
     to {
       opacity: 1;
       transform: scale(1);
@@ -323,13 +336,17 @@ button, a, [role="button"] {
   }
 
   /* Apply smooth hover effects to interactive elements */
-  input:focus, textarea:focus, select:focus {
+  input:focus,
+  textarea:focus,
+  select:focus {
     @apply ring-2 ring-primary ring-offset-2;
   }
 }
 
 /* Smooth input focus states */
-input, textarea, select {
+input,
+textarea,
+select {
   @apply transition-all duration-200;
 }
 

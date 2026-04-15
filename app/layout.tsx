@@ -1,11 +1,18 @@
 import type { Metadata } from 'next'
-import { Geist, Geist_Mono } from 'next/font/google'
+import { Geist, Geist_Mono, MuseoModerno, Inter } from 'next/font/google'
 import { Analytics } from '@vercel/analytics/next'
 import { ReactNode } from 'react'
 import './globals.css'
 import Header from '@/components/header'
 import Footer from '@/components/footer'
 import Providers from '@/components/providers'
+
+const inter = Inter({ subsets: ['latin'], variable: '--font-inter' })
+const museoModerno = MuseoModerno({
+    subsets: ['latin'],
+    variable: '--font-logo',
+    weight: ['700']
+})
 
 const _geist = Geist({ subsets: ["latin"] });
 const _geistMono = Geist_Mono({ subsets: ["latin"] });
@@ -35,7 +42,7 @@ export default function RootLayout({
     children: ReactNode
 }>) {
     return (
-        <html lang="en" suppressHydrationWarning data-palette="arctic-pine" >
+        <html lang="en" suppressHydrationWarning data-palette="sage-stone" className={`${inter.variable} ${museoModerno.variable}`}>
             <body className="font-sans antialiased bg-background text-foreground">
                 <Providers>
                     <Header />

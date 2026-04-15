@@ -7,83 +7,69 @@ import { Reveal } from '@/components/motion/reveal'
 
 export default function Footer() {
     return (
-        <footer className="bg-foreground/3 border-t border-border/70">
-            <div className="container mx-auto px-4 py-12">
-                <div className="grid grid-cols-1 md:grid-cols-4 gap-10 mb-10">
+        <footer className="bg-[#283524] border-t border-white/5 text-[#f4efe6]">
+            <div className="container mx-auto px-4 py-16">
+                <div className="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
                     {/* Company Info */}
                     <Reveal>
-                        <div>
+                        <div className="space-y-6">
                             <img
-                                src="/PWS-Logo/PWS-PNG-files/PWS-wordmark-png/PWS wordmark - off white@0.5x.png"
+                                src="/PWS-Logo/PWS-Webp-Files/PWS wordmark - off white.webp"
                                 alt="Pure Work Spaces"
-                                className="h-10 w-auto mb-4"
+                                className="h-10 w-auto"
                             />
-                            <p className="text-sm text-foreground/70 mb-5 leading-relaxed">
-                                Pure Work Spaces Ltd: Cleanliness is not just a service, it is a foundation for clarity, confidence, and calm.
+                            <p className="text-sm opacity-80 leading-relaxed max-w-xs">
+                                Cleanliness is not just a service, it is a foundation for clarity, confidence, and calm.
                             </p>
                             <div className="flex gap-4">
-                                <a href="#" className="text-foreground/70 hover:text-primary transition-colors" aria-label="Facebook">
-                                    <Facebook size={18} />
+                                <a href="#" className="opacity-70 hover:opacity-100 transition-opacity" aria-label="Facebook">
+                                    <Facebook size={20} />
                                 </a>
-                                <a href="#" className="text-foreground/70 hover:text-primary transition-colors" aria-label="Instagram">
-                                    <Instagram size={18} />
+                                <a href="#" className="opacity-70 hover:opacity-100 transition-opacity" aria-label="Instagram">
+                                    <Instagram size={20} />
                                 </a>
-                                <a href="#" className="text-foreground/70 hover:text-primary transition-colors" aria-label="LinkedIn">
-                                    <Linkedin size={18} />
+                                <a href="#" className="opacity-70 hover:opacity-100 transition-opacity" aria-label="LinkedIn">
+                                    <Linkedin size={20} />
                                 </a>
                             </div>
                         </div>
                     </Reveal>
 
-                    {/* Quick Links */}
+                    {/* Navigation */}
                     <Reveal delay={0.05}>
                         <div>
-                            <h3 className="font-semibold mb-4">Quick Links</h3>
-                            <ul className="space-y-2">
-                                <li><Link href="/" className="text-sm text-foreground/70 hover:text-primary transition-colors">Home</Link></li>
-                                <li><Link href="/services" className="text-sm text-foreground/70 hover:text-primary transition-colors">Services</Link></li>
-                                <li><Link href="/gallery" className="text-sm text-foreground/70 hover:text-primary transition-colors">Gallery</Link></li>
-                                <li><Link href="/case-studies" className="text-sm text-foreground/70 hover:text-primary transition-colors">Case Studies</Link></li>
-                                <li><Link href="/about" className="text-sm text-foreground/70 hover:text-primary transition-colors">About Us</Link></li>
-                                <li><Link href="/contact" className="text-sm text-foreground/70 hover:text-primary transition-colors">Contact</Link></li>
+                            <h3 className="text-lg font-bold mb-6 uppercase tracking-widest text-[#d3decf]">Navigation</h3>
+                            <ul className="space-y-3">
+                                <li><Link href="/#story" className="text-sm opacity-70 hover:opacity-100 transition-opacity">Our Story</Link></li>
+                                <li><Link href="/#values" className="text-sm opacity-70 hover:opacity-100 transition-opacity">Core Values</Link></li>
+                                <li><Link href="/#who-we-serve" className="text-sm opacity-70 hover:opacity-100 transition-opacity">Who We Serve</Link></li>
+                                <li><Link href="/#approach" className="text-sm opacity-70 hover:opacity-100 transition-opacity">Our Approach</Link></li>
+                                <li><Link href="/gallery" className="text-sm opacity-70 hover:opacity-100 transition-opacity">Gallery</Link></li>
                             </ul>
                         </div>
                     </Reveal>
 
-                    {/* Services */}
+                    {/* Contact Details */}
                     <Reveal delay={0.1}>
                         <div>
-                            <h3 className="font-semibold mb-4">Services</h3>
-                            <ul className="space-y-2">
-                                <li><Link href="/services/commercial" className="text-sm text-foreground/70 hover:text-primary transition-colors">Commercial Cleaning</Link></li>
-                                <li><Link href="/services/after-build" className="text-sm text-foreground/70 hover:text-primary transition-colors">After-Build Cleaning</Link></li>
-                                <li><Link href="/services/end-of-tenancy" className="text-sm text-foreground/70 hover:text-primary transition-colors">End-of-Tenancy</Link></li>
-                                <li><Link href="/services/serviced-accommodation" className="text-sm text-foreground/70 hover:text-primary transition-colors">Serviced Accommodation</Link></li>
-                            </ul>
-                        </div>
-                    </Reveal>
-
-                    {/* Contact & Newsletter */}
-                    <Reveal delay={0.15}>
-                        <div>
-                            <h3 className="font-semibold mb-4">Contact</h3>
-                            <div className="space-y-3 mb-5">
+                            <h3 className="text-lg font-bold mb-6 uppercase tracking-widest text-[#d3decf]">Connect</h3>
+                            <div className="space-y-4">
                                 <a
                                     href="tel:07300864523"
-                                    className="flex items-center gap-2 text-sm text-foreground/70 hover:text-primary transition-colors"
+                                    className="flex items-center gap-3 text-sm opacity-70 hover:opacity-100 transition-opacity"
                                 >
-                                    <Phone size={16} />
+                                    <Phone size={18} className="text-[#d3decf]" />
                                     07300864523
                                 </a>
                                 <a
-                                    href="mailto:hello@pureworkspaces.uk"
-                                    className="flex items-center gap-2 text-sm text-foreground/70 hover:text-primary transition-colors"
+                                    href="mailto:jaigar@pureworkspaces.uk"
+                                    className="flex items-center gap-3 text-sm opacity-70 hover:opacity-100 transition-opacity"
                                 >
-                                    <Mail size={16} />
-                                    hello@pureworkspaces.uk
+                                    <Mail size={18} className="text-[#d3decf]" />
+                                    jaigar@pureworkspaces.uk
                                 </a>
-                                <div className="flex items-start gap-2 text-sm text-foreground/70">
-                                    <MapPin size={16} className="mt-1 shrink-0" />
+                                <div className="flex items-start gap-3 text-sm opacity-70">
+                                    <MapPin size={18} className="mt-1 shrink-0 text-[#d3decf]" />
                                     <span>
                                         Prama House, 267 Banbury Road,<br />
                                         Oxford, OX2 7HT
@@ -92,21 +78,30 @@ export default function Footer() {
                             </div>
                         </div>
                     </Reveal>
+
+                    {/* Quote Link */}
+                    <Reveal delay={0.15}>
+                        <div>
+                            <h3 className="text-lg font-bold mb-6 uppercase tracking-widest text-[#d3decf]">Get Started</h3>
+                            <p className="text-sm opacity-70 mb-6">Ready to transform your workspace?</p>
+                            <Link href="/#contact">
+                                <Button className="bg-[#f4efe6] text-[#283524] hover:bg-white w-full uppercase font-bold tracking-widest text-xs h-12">
+                                    Request a Quote
+                                </Button>
+                            </Link>
+                        </div>
+                    </Reveal>
                 </div>
 
                 {/* Bottom Bar */}
-                <div className="border-t border-border pt-8">
-                    <div className="flex flex-col md:flex-row justify-between items-center gap-4">
-                        <p className="text-xs text-foreground/60">
-                            © 2026 Pure Work Spaces Ltd. All rights reserved.
+                <div className="border-t border-white/10 pt-10">
+                    <div className="flex flex-col md:flex-row justify-between items-center gap-6">
+                        <p className="text-xs opacity-50 font-medium">
+                            © 2026 Pure Work Spaces Ltd. Registered in England & Wales.
                         </p>
-                        <div className="flex gap-6 text-xs">
-                            <Link href="#" className="text-foreground/60 hover:text-primary transition-colors">
-                                Privacy Policy
-                            </Link>
-                            <Link href="#" className="text-foreground/60 hover:text-primary transition-colors">
-                                Terms of Services
-                            </Link>
+                        <div className="flex gap-8 text-xs font-medium opacity-50">
+                            <Link href="#" className="hover:opacity-100 transition-opacity">Privacy Policy</Link>
+                            <Link href="#" className="hover:opacity-100 transition-opacity">Terms of Service</Link>
                         </div>
                     </div>
                 </div>
