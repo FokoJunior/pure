@@ -62,17 +62,18 @@ export default function Footer() {
                                     07300864523
                                 </a>
                                 <a
-                                    href="mailto:jaigar@pureworkspaces.uk"
+                                    href="mailto:hello@pureworkspaces.uk"
                                     className="flex items-center gap-3 text-sm opacity-70 hover:opacity-100 transition-opacity"
                                 >
                                     <Mail size={18} className="text-[#d3decf]" />
-                                    jaigar@pureworkspaces.uk
+                                    hello@pureworkspaces.uk
                                 </a>
                                 <div className="flex items-start gap-3 text-sm opacity-70">
                                     <MapPin size={18} className="mt-1 shrink-0 text-[#d3decf]" />
                                     <span>
                                         Prama House, 267 Banbury Road,<br />
-                                        Oxford, OX2 7HT
+                                        Oxford, OX2 7HT<br />
+                                        <span className="block mt-2 opacity-80 text-xs">Company No. 16957784</span>
                                     </span>
                                 </div>
                             </div>
