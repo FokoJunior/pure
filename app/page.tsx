@@ -14,9 +14,43 @@ import {
   MapPin,
   Mail,
 } from 'lucide-react'
+import { useState } from 'react'
+import { toast } from 'sonner'
 import { Reveal, Stagger, StaggerItem } from '@/components/motion/reveal'
 
 export default function HomePage() {
+  const [isLoading, setIsLoading] = useState(false)
+  const [formData, setFormData] = useState({
+    name: '',
+    company: '',
+    email: '',
+    message: ''
+  })
+
+  async function onSubmit(e: React.FormEvent) {
+    e.preventDefault()
+    setIsLoading(true)
+
+    try {
+      const res = await fetch('/api/contact', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(formData)
+      })
+
+      if (res.ok) {
+        toast.success('Message sent! Check your email for confirmation.')
+        setFormData({ name: '', company: '', email: '', message: '' })
+      } else {
+        toast.error('Failed to send message. Please try again.')
+      }
+    } catch (error) {
+      toast.error('An error occurred. Please try again later.')
+    } finally {
+      setIsLoading(false)
+    }
+  }
+
   const values = [
     {
       title: 'Responsibility',
@@ -248,31 +282,62 @@ export default function HomePage() {
             {/* Right Column: White Card Form */}
             <Reveal delay={0.3} y={0}>
               <div className="bg-white p-8 sm:p-12 shadow-2xl text-[#0a1118]">
-                <form className="space-y-8">
+                <form className="space-y-8" onSubmit={onSubmit}>
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-8 gap-y-8">
                     <div className="space-y-2">
                       <label className="text-[10px] font-bold uppercase tracking-widest text-[#0a1118]/60">Contact Name</label>
-                      <input type="text" placeholder="Your name" className="w-full pb-3 text-[14px] bg-transparent border-0 border-b border-[#0a1118]/10 rounded-none text-[#0a1118] placeholder-[#0a1118]/40 focus:outline-none focus:border-[#0a1118]/40 focus:ring-0 transition-colors" />
+                      <input
+                        type="text"
+                        required
+                        value={formData.name}
+                        onChange={(e) => setFormData({ ...formData, name: e.target.value })}
+                        placeholder="Your name"
+                        className="w-full pb-3 text-[14px] bg-transparent border-0 border-b border-[#0a1118]/10 rounded-none text-[#0a1118] placeholder-[#0a1118]/40 focus:outline-none focus:border-[#0a1118]/40 focus:ring-0 transition-colors"
+                      />
                     </div>
                     <div className="space-y-2">
                       <label className="text-[10px] font-bold uppercase tracking-widest text-[#0a1118]/60">Company Name</label>
-                      <input type="text" placeholder="Business name" className="w-full pb-3 text-[14px] bg-transparent border-0 border-b border-[#0a1118]/10 rounded-none text-[#0a1118] placeholder-[#0a1118]/40 focus:outline-none focus:border-[#0a1118]/40 focus:ring-0 transition-colors" />
+                      <input
+                        type="text"
+                        value={formData.company}
+                        onChange={(e) => setFormData({ ...formData, company: e.target.value })}
+                        placeholder="Business name"
+                        className="w-full pb-3 text-[14px] bg-transparent border-0 border-b border-[#0a1118]/10 rounded-none text-[#0a1118] placeholder-[#0a1118]/40 focus:outline-none focus:border-[#0a1118]/40 focus:ring-0 transition-colors"
+                      />
                     </div>
                   </div>
 
                   <div className="space-y-2">
                     <label className="text-[10px] font-bold uppercase tracking-widest text-[#0a1118]/60">Work Email</label>
-                    <input type="email" placeholder="email@company.com" className="w-full pb-3 text-[14px] bg-transparent border-0 border-b border-[#0a1118]/10 rounded-none text-[#0a1118] placeholder-[#0a1118]/40 focus:outline-none focus:border-[#0a1118]/40 focus:ring-0 transition-colors" />
+                    <input
+                      type="email"
+                      required
+                      value={formData.email}
+                      onChange={(e) => setFormData({ ...formData, email: e.target.value })}
+                      placeholder="email@company.com"
+                      className="w-full pb-3 text-[14px] bg-transparent border-0 border-b border-[#0a1118]/10 rounded-none text-[#0a1118] placeholder-[#0a1118]/40 focus:outline-none focus:border-[#0a1118]/40 focus:ring-0 transition-colors"
+                    />
                   </div>
 
                   <div className="space-y-2">
                     <label className="text-[10px] font-bold uppercase tracking-widest text-[#0a1118]/60">Requirement Brief</label>
-                    <textarea rows={3} placeholder="e.g. Daily office clean in Abingdon..." className="w-full pb-3 pt-2 text-[14px] bg-transparent border-0 border-b border-[#0a1118]/10 rounded-none text-[#0a1118] placeholder-[#0a1118]/40 focus:outline-none focus:border-[#0a1118]/40 focus:ring-0 transition-colors resize-none"></textarea>
+                    <textarea
+                      rows={3}
+                      required
+                      value={formData.message}
+                      onChange={(e) => setFormData({ ...formData, message: e.target.value })}
+                      placeholder="e.g. Daily office clean in Abingdon..."
+                      className="w-full pb-3 pt-2 text-[14px] bg-transparent border-0 border-b border-[#0a1118]/10 rounded-none text-[#0a1118] placeholder-[#0a1118]/40 focus:outline-none focus:border-[#0a1118]/40 focus:ring-0 transition-colors resize-none"
+                    ></textarea>
                   </div>
 
                   <div className="pt-6">
-                    <Button size="lg" className="w-full bg-[#0e141a] text-white hover:bg-[#1a232b] text-[13px] h-[52px] rounded-none font-bold uppercase tracking-[0.2em] transition-all">
-                      Request Site Visit
+                    <Button
+                      size="lg"
+                      disabled={isLoading}
+                      className="w-full bg-[#0e141a] text-white hover:bg-[#1a232b] text-[13px] h-[52px] rounded-none font-bold uppercase tracking-[0.2em] transition-all disabled:opacity-50"
+                    >
+                      {isLoading ? 'Sending...' : 'Request Site Visit'}
                     </Button>
                   </div>
                 </form>
