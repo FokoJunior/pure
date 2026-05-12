@@ -21,7 +21,12 @@ export async function getGalleryImages(): Promise<GalleryImage[]> {
   }
 
   const files = entries
-    .filter((name) => SUPPORTED_EXT.has(path.extname(name).toLowerCase()))
+    .filter((name) => {
+      const extMatch = SUPPORTED_EXT.has(path.extname(name).toLowerCase())
+      // Exclude green/water images as requested: 1, 4, 8, 9, 10, 11
+      const isExcluded = ['1.jpg', '4.jpg', '8.jpg', '9.jpg', '10.jpg', '11.jpg'].includes(name)
+      return extMatch && !isExcluded
+    })
     .sort((a, b) => a.localeCompare(b, undefined, { numeric: true, sensitivity: 'base' }))
 
   return files.map((name) => {

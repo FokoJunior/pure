@@ -13,6 +13,13 @@ import {
   Users,
   MapPin,
   Mail,
+  Building2,
+  Hammer,
+  KeyRound,
+  Hotel,
+  PartyPopper,
+  Building,
+  House,
 } from 'lucide-react'
 import { useState } from 'react'
 import { toast } from 'sonner'
@@ -87,6 +94,16 @@ export default function HomePage() {
     { title: 'Premium & Simple', description: 'Clean, uncluttered, high-standard approach.' },
   ]
 
+  const services = [
+    { slug: 'commercial', title: 'Commercial & Office', icon: Building2 },
+    { slug: 'after-build', title: 'After Build Cleans', icon: Hammer },
+    { slug: 'end-of-tenancy', title: 'End of Tenancy', icon: KeyRound },
+    { slug: 'serviced-accommodation', title: 'Serviced Accommodation', icon: Hotel },
+    { slug: 'event', title: 'Event Cleaning', icon: PartyPopper },
+    { slug: 'hotel', title: 'Hotel / Holiday Lets', icon: Building },
+    { slug: 'domestic', title: 'Domestic Clients', icon: House },
+  ]
+
   return (
     <div className="flex flex-col">
       {/* Section 1: Hero */}
@@ -150,6 +167,33 @@ export default function HomePage() {
               </div>
             </Reveal>
           </div>
+        </div>
+      </section>
+
+      {/* Section: What We Do */}
+      <section id="services" className="py-24 bg-white text-[#283524]">
+        <div className="container mx-auto px-4">
+          <Reveal className="text-center mb-16">
+            <h2 className="text-4xl md:text-5xl font-heading font-bold">What We Do</h2>
+            <p className="mt-4 text-lg opacity-70">A higher standard of maintenance across every sector.</p>
+          </Reveal>
+          <Stagger className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+            {services.map((service) => (
+              <StaggerItem key={service.slug}>
+                <Link href={`/services/${service.slug}`} className="block group">
+                  <div className="p-8 bg-[#f4efe6]/50 border border-[#283524]/5 hover:bg-[#283524] hover:text-white transition-all duration-300 h-full flex flex-col items-center text-center">
+                    <div className="mb-6 rounded-full bg-[#283524]/5 p-4 group-hover:bg-white/10 transition-colors">
+                      <service.icon className="w-8 h-8" />
+                    </div>
+                    <h3 className="text-lg font-bold mb-4 tracking-tight">{service.title}</h3>
+                    <div className="mt-auto pt-4 flex items-center text-xs font-bold uppercase tracking-[0.2em] opacity-50 group-hover:opacity-100 transition-opacity">
+                      Learn More <ArrowRight className="ml-2 w-3 h-3" />
+                    </div>
+                  </div>
+                </Link>
+              </StaggerItem>
+            ))}
+          </Stagger>
         </div>
       </section>
 
