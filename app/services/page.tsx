@@ -67,14 +67,6 @@ export default function ServicesPage() {
             details: 'From room preparation to communal areas, we focus on presentation and attention to detail to help maintain strong reviews.',
             benefits: ['Room preparation', 'Communal area care', 'Hygiene focus', 'Guest satisfaction support'],
         },
-        {
-            slug: 'domestic',
-            title: 'Domestic Clients',
-            description: 'Dependable and discreet cleaning services for comfortable living.',
-            icon: House,
-            details: 'We maintain a clean, comfortable living environment with attention to detail and flexible scheduling.',
-            benefits: ['Discreet home cleaning', 'Flexible scheduling', 'Stress-free upkeep', 'Personalized care'],
-        },
     ]
 
     return (

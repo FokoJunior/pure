@@ -82,7 +82,7 @@ const serviceDetails: Record<string, any> = {
       'Agent standards check',
       'Final cleanliness report',
     ],
-    relatedServices: ['serviced-accommodation', 'domestic'],
+    relatedServices: ['serviced-accommodation'],
   },
   'serviced-accommodation': {
     title: 'Serviced Accommodation',
@@ -122,7 +122,7 @@ const serviceDetails: Record<string, any> = {
       'Mid-event maintenance',
       'Rapid post-event cleanup',
     ],
-    relatedServices: ['commercial', 'serviced-accommodation'],
+    relatedServices: ['commercial', 'hotel'],
   },
   'hotel': {
     title: 'Hotel / Holiday Lets',
@@ -141,26 +141,7 @@ const serviceDetails: Record<string, any> = {
       'Detail-oriented cleaning',
       'Presentation standard check',
     ],
-    relatedServices: ['serviced-accommodation', 'domestic'],
-  },
-  'domestic': {
-    title: 'Domestic Clients',
-    subtitle: 'Dependable and discreet cleaning services for homes',
-    icon: House,
-    overview: 'We offer dependable and discreet cleaning services for homes, designed to maintain a clean, comfortable living environment. With attention to detail and flexible scheduling, we help you enjoy your space without the stress of upkeep.',
-    keyBenefits: [
-      'Dependable & Discreet service',
-      'Comfortable living maintenance',
-      'Flexible scheduling options',
-      'Stress-free home upkeep',
-      'Personalized attention',
-    ],
-    process: [
-      'Home needs assessment',
-      'Flexible clean schedule',
-      'Discreet service delivery',
-    ],
-    relatedServices: ['end-of-tenancy', 'after-build'],
+    relatedServices: ['serviced-accommodation', 'event'],
   },
 }
 

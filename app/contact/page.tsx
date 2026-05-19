@@ -42,7 +42,6 @@ export default function ContactPage() {
     'Serviced Accommodation',
     'Event Cleaning',
     'Hotel & Holiday',
-    'Domestic Cleaning',
     'Other',
   ]
 

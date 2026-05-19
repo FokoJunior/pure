@@ -101,7 +101,6 @@ export default function HomePage() {
     { slug: 'serviced-accommodation', title: 'Serviced Accommodation', icon: Hotel },
     { slug: 'event', title: 'Event Cleaning', icon: PartyPopper },
     { slug: 'hotel', title: 'Hotel / Holiday Lets', icon: Building },
-    { slug: 'domestic', title: 'Domestic Clients', icon: House },
   ]
 
   return (
@@ -177,7 +176,7 @@ export default function HomePage() {
             <h2 className="text-4xl md:text-5xl font-heading font-bold">What We Do</h2>
             <p className="mt-4 text-lg opacity-70">A higher standard of maintenance across every sector.</p>
           </Reveal>
-          <Stagger className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          <Stagger className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {services.map((service) => (
               <StaggerItem key={service.slug}>
                 <Link href={`/services/${service.slug}`} className="block group">
@@ -185,10 +184,7 @@ export default function HomePage() {
                     <div className="mb-6 rounded-full bg-[#283524]/5 p-4 group-hover:bg-white/10 transition-colors">
                       <service.icon className="w-8 h-8" />
                     </div>
-                    <h3 className="text-lg font-bold mb-4 tracking-tight">{service.title}</h3>
-                    <div className="mt-auto pt-4 flex items-center text-xs font-bold uppercase tracking-[0.2em] opacity-50 group-hover:opacity-100 transition-opacity">
-                      Learn More <ArrowRight className="ml-2 w-3 h-3" />
-                    </div>
+                    <h3 className="text-lg font-bold tracking-tight">{service.title}</h3>
                   </div>
                 </Link>
               </StaggerItem>
