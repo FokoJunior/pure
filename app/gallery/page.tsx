@@ -42,7 +42,7 @@ export default function GalleryPage() {
                   <Images className="h-12 w-12" />
                 </div>
                 <div className="space-y-3">
-                  <h2 className="text-3xl md:text-4xl font-heading font-bold tracking-tight">Picture under construction</h2>
+                  <h2 className="text-3xl md:text-4xl font-heading font-bold tracking-tight">Pictures coming soon</h2>
                   <p className="text-lg opacity-85 max-w-md mx-auto leading-relaxed">
                     We are currently preparing a selection of photos illustrating our achievements and our professional cleaning interventions.
                   </p>

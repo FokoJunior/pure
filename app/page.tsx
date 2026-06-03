@@ -156,13 +156,13 @@ export default function HomePage() {
               <h2 className="text-4xl md:text-5xl font-heading font-bold mb-8">Brand Story</h2>
               <div className="space-y-6 text-lg leading-relaxed opacity-90">
                 <p>
-                  Pure Workspaces was built on responsibility, resilience, and care. It was not created from a pursuit of hustle or rapid growth, but from a simple commitment to doing what needs to be done, properly and consistently.
+                  Pure Work Spaces was built on responsibility, resilience, and care. It was not created from a pursuit of hustle or rapid growth, but from a simple commitment to doing what needs to be done, properly and consistently.
                 </p>
                 <p>
                   What began as a practical step forward became a clear realisation: when done well, cleaning brings more than just order. It creates calm, clarity, and a better environment for people to work in.
                 </p>
                 <p>
-                  Pure Workspaces exists to take the pressure of cleaning off its clients. It is a trust-led, quietly premium service for workplaces that value reliability, care, and high standards. The result is simple: spaces that feel sorted, and clients who can get on with what matters.
+                  Pure Work Spaces exists to take the pressure of cleaning off its clients. It is a trust-led, quietly premium service for workplaces that value reliability, care, and high standards. The result is simple: spaces that feel sorted, and clients who can get on with what matters.
                 </p>
               </div>
             </Reveal>
@@ -224,7 +224,7 @@ export default function HomePage() {
             <Reveal>
               <h2 className="text-4xl md:text-5xl font-heading font-bold mb-8">Who We Serve</h2>
               <p className="text-xl leading-relaxed opacity-90 mb-8">
-                Pure Workspaces serves commercial and industrial businesses, including offices, warehouses, factories, and business parks.
+                Pure Work Spaces serves commercial and industrial businesses, including offices, warehouses, factories, and business parks.
               </p>
               <p className="text-lg opacity-85 mb-8">
                 Our clients are typically facility managers, office managers, and business owners who are responsible for maintaining clean, professional environments. They value reliability, high standards, and peace of mind, and want a trusted partner who takes full responsibility without needing to be managed.
