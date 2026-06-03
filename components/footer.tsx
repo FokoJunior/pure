@@ -16,7 +16,7 @@ export default function Footer() {
                             <img
                                 src="/PWS-Logo/PWS-Webp-Files/PWS wordmark - off white.webp"
                                 alt="Pure Work Spaces"
-                                className="h-10 w-auto"
+                                className="h-14 md:h-16 w-auto"
                             />
                             <p className="text-sm opacity-80 leading-relaxed max-w-xs">
                                 Cleanliness is not just a service, it is a foundation for clarity, confidence, and calm.

@@ -13,6 +13,7 @@ import {
   Users,
   MapPin,
   Mail,
+  MessageCircle,
   Building2,
   Hammer,
   KeyRound,
@@ -130,7 +131,7 @@ export default function HomePage() {
               Specialist, contract-led commercial cleaning for businesses in Oxfordshire and Swindon who value consistency, compliance, and excellence.
             </p>
             <Button size="lg" className="bg-[#f4efe6] text-[#283524] hover:bg-[#f4efe6]/90 text-lg px-10 h-14" asChild>
-              <Link href="#contact">Get in Touch</Link>
+              <Link href="/#contact">Get in Touch</Link>
             </Button>
           </Reveal>
         </div>
@@ -229,7 +230,7 @@ export default function HomePage() {
                 Our clients are typically facility managers, office managers, and business owners who are responsible for maintaining clean, professional environments. They value reliability, high standards, and peace of mind, and want a trusted partner who takes full responsibility without needing to be managed.
               </p>
               <Button size="lg" className="bg-[#283524] text-white hover:bg-[#283524]/90" asChild>
-                <Link href="#contact">Request a consultation</Link>
+                <Link href="/#contact">Request a consultation</Link>
               </Button>
             </Reveal>
             <Reveal>
@@ -315,6 +316,23 @@ export default function HomePage() {
                       <div className="text-[14px] font-semibold text-white tracking-wide">hello@pureworkspaces.uk</div>
                     </div>
                   </div>
+                </Reveal>
+
+                <Reveal delay={0.5}>
+                  <a
+                    href="https://wa.me/447300864523?text=I%20would%20like%20to%20book%20a%20site%20visit"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-start gap-4 group hover:opacity-90 transition-opacity"
+                  >
+                    <div className="w-10 h-10 bg-green-500/10 group-hover:bg-green-500/25 flex items-center justify-center shrink-0 transition-colors">
+                      <MessageCircle className="w-[18px] h-[18px] text-green-400 group-hover:text-green-300" />
+                    </div>
+                    <div className="pt-0.5">
+                      <div className="text-[10px] font-bold tracking-widest uppercase text-white/50 mb-1">WhatsApp Chat</div>
+                      <div className="text-[14px] font-semibold text-white tracking-wide group-hover:text-green-400 transition-colors">+44 7300 864523</div>
+                    </div>
+                  </a>
                 </Reveal>
               </div>
             </div>

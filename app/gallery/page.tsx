@@ -3,12 +3,8 @@ import { Button } from '@/components/ui/button'
 import { Card } from '@/components/ui/card'
 import { ArrowRight, Images } from 'lucide-react'
 import { Reveal } from '@/components/motion/reveal'
-import GalleryGrid from '@/components/gallery/gallery-grid'
-import { getGalleryImages } from '@/lib/gallery.server'
 
-export default async function GalleryPage() {
-  const images = await getGalleryImages()
-
+export default function GalleryPage() {
   return (
     <div className="bg-[#f4efe6] min-h-screen">
       {/* Hero Section */}
@@ -37,28 +33,23 @@ export default async function GalleryPage() {
       </section>
 
       {/* Gallery Grid Section */}
-      <section className="py-24">
+      <section className="py-24 flex items-center justify-center">
         <div className="container mx-auto px-4">
-          <Reveal className="mb-16">
-            <div className="max-w-2xl text-[#283524]">
-              <h2 className="text-3xl md:text-4xl font-heading font-bold mb-4">Precision & Excellence</h2>
-              <p className="text-lg opacity-80">
-                From commercial offices to industrial warehouses, we maintain the highest standards of cleanliness and order.
-              </p>
-            </div>
-          </Reveal>
-
-          {images.length ? (
-            <div className="reveal-stagger">
-              <GalleryGrid images={images} columns={4} />
-            </div>
-          ) : (
-            <Card className="p-12 border-[#283524]/10 bg-white/50 text-center">
-              <div className="text-lg text-[#283524]/70 leading-relaxed max-w-md mx-auto font-medium">
-                Our portfolio is currently being updated. Please check back soon to see our latest transformations.
+          <Reveal className="max-w-2xl mx-auto text-center">
+            <Card className="p-16 border-[#283524]/10 bg-white/60 text-[#283524] rounded-2xl shadow-sm backdrop-blur-xs">
+              <div className="flex flex-col items-center gap-6">
+                <div className="p-5 bg-[#283524]/5 rounded-full text-[#283524]/80">
+                  <Images className="h-12 w-12" />
+                </div>
+                <div className="space-y-3">
+                  <h2 className="text-3xl md:text-4xl font-heading font-bold tracking-tight">Picture under construction</h2>
+                  <p className="text-lg opacity-85 max-w-md mx-auto leading-relaxed">
+                    We are currently preparing a selection of photos illustrating our achievements and our professional cleaning interventions.
+                  </p>
+                </div>
               </div>
             </Card>
-          )}
+          </Reveal>
         </div>
       </section>
     </div>

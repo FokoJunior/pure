@@ -6,7 +6,7 @@ import { Button } from '@/components/ui/button'
 import { Card } from '@/components/ui/card'
 import { Input } from '@/components/ui/input'
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion'
-import { Mail, Phone, MapPin, Clock, Send } from 'lucide-react'
+import { Mail, Phone, MapPin, Clock, Send, MessageCircle } from 'lucide-react'
 import { Reveal, Stagger, StaggerItem } from '@/components/motion/reveal'
 
 export default function ContactPage() {
@@ -75,10 +75,26 @@ export default function ContactPage() {
                     </div>
                     <div>
                       <h3 className="font-semibold text-foreground mb-1">Phone</h3>
-                      <a href="tel:+441234567890" className="text-primary hover:text-primary/80 transition-colors">
-                        +44 (0) 1234 567 890
+                      <a href="tel:07300864523" className="text-primary hover:text-primary/80 transition-colors">
+                        07300 864523
                       </a>
                       <p className="text-sm text-foreground/60 mt-1">Mon-Fri, 9am-5pm</p>
+                    </div>
+                  </div>
+                </Card>
+
+                {/* WhatsApp */}
+                <Card className="p-6 bg-card border-[#283524]/10 bg-green-50/20 hover:shadow-lg transition-shadow">
+                  <div className="flex gap-4">
+                    <div className="bg-green-600/10 rounded-lg p-3 w-fit h-fit">
+                      <MessageCircle className="w-6 h-6 text-green-600" />
+                    </div>
+                    <div>
+                      <h3 className="font-semibold text-foreground mb-1">WhatsApp</h3>
+                      <a href="https://wa.me/447300864523?text=I%20would%20like%20to%20book%20a%20site%20visit" target="_blank" rel="noopener noreferrer" className="text-green-600 hover:text-green-700 font-medium transition-colors">
+                        Chat on WhatsApp
+                      </a>
+                      <p className="text-sm text-foreground/60 mt-1">Direct message & site visit booking</p>
                     </div>
                   </div>
                 </Card>
@@ -91,8 +107,8 @@ export default function ContactPage() {
                     </div>
                     <div>
                       <h3 className="font-semibold text-foreground mb-1">Email</h3>
-                      <a href="mailto:info@pureworkspaces.co.uk" className="text-primary hover:text-primary/80 transition-colors">
-                        info@pureworkspaces.co.uk
+                      <a href="mailto:hello@pureworkspaces.uk" className="text-primary hover:text-primary/80 transition-colors">
+                        hello@pureworkspaces.uk
                       </a>
                       <p className="text-sm text-foreground/60 mt-1">We respond within 24 hours</p>
                     </div>
