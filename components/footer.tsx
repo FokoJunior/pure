@@ -22,13 +22,13 @@ export default function Footer() {
                                 Cleanliness is not just a service, it is a foundation for clarity, confidence, and calm.
                             </p>
                             <div className="flex gap-4">
-                                <a href="https://www.facebook.com/profile.php?id=61566685217658" target="_blank" rel="noopener noreferrer" className="opacity-70 hover:opacity-100 transition-opacity" aria-label="Facebook">
+                                <a href="https://www.facebook.com/pureworkspaces/" target="_blank" rel="noopener noreferrer" className="opacity-70 hover:opacity-100 transition-opacity" aria-label="Facebook">
                                     <Facebook size={20} />
                                 </a>
                                 <a href="https://www.instagram.com/pureworkspaces/" target="_blank" rel="noopener noreferrer" className="opacity-70 hover:opacity-100 transition-opacity" aria-label="Instagram">
                                     <Instagram size={20} />
                                 </a>
-                                <a href="#" className="opacity-70 hover:opacity-100 transition-opacity" aria-label="LinkedIn">
+                                <a href="https://linkedin.com/pureworkspaces" target="_blank" rel="noopener noreferrer" className="opacity-70 hover:opacity-100 transition-opacity" aria-label="LinkedIn">
                                     <Linkedin size={20} />
                                 </a>
                             </div>
