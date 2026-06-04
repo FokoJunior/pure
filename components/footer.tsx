@@ -105,13 +105,13 @@ export default function Footer() {
 
                 {/* Bottom Bar */}
                 <div className="border-t border-white/10 pt-10">
-                    <div className="flex flex-col md:flex-row justify-between items-center gap-6">
+                    <div className="flex flex-col md:flex-row items-center gap-6">
                         <p className="text-xs opacity-50 font-medium">
                             © 2026 Pure Work Spaces Ltd. Registered in England & Wales.
                         </p>
                         <div className="flex gap-8 text-xs font-medium opacity-50">
-                            <Link href="#" className="hover:opacity-100 transition-opacity">Privacy Policy</Link>
-                            <Link href="#" className="hover:opacity-100 transition-opacity">Terms of Service</Link>
+                            <Link href="/privacy-policy" className="hover:opacity-100 transition-opacity">Privacy Policy</Link>
+                            <Link href="/terms-of-service" className="hover:opacity-100 transition-opacity">Terms of Service</Link>
                         </div>
                     </div>
                 </div>
