@@ -1,7 +1,7 @@
 'use client'
 
 import Link from 'next/link'
-import { Mail, Phone, MapPin, Facebook, Instagram, Linkedin, ArrowRight } from 'lucide-react'
+import { Mail, Phone, MapPin, Facebook, Instagram, Linkedin, ArrowRight, MessageCircle } from 'lucide-react'
 import { Button } from '@/components/ui/button'
 import { Reveal } from '@/components/motion/reveal'
 
@@ -67,6 +67,15 @@ export default function Footer() {
                                 >
                                     <Mail size={18} className="text-[#d3decf]" />
                                     hello@pureworkspaces.uk
+                                </a>
+                                <a
+                                    href="https://wa.me/447300864523?text=I%20would%20like%20to%20book%20a%20site%20visit"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="flex items-center gap-3 text-sm opacity-70 hover:opacity-100 transition-opacity"
+                                >
+                                    <MessageCircle size={18} className="text-[#d3decf]" />
+                                    WhatsApp Chat
                                 </a>
                                 <div className="flex items-start gap-3 text-sm opacity-70">
                                     <MapPin size={18} className="mt-1 shrink-0 text-[#d3decf]" />
