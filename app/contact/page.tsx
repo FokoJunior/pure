@@ -110,7 +110,6 @@ export default function ContactPage() {
                       <a href="mailto:hello@pureworkspaces.uk" className="text-primary hover:text-primary/80 transition-colors">
                         hello@pureworkspaces.uk
                       </a>
-                      <p className="text-sm text-foreground/60 mt-1">We respond within 24 hours</p>
                     </div>
                   </div>
                 </Card>
@@ -138,10 +137,9 @@ export default function ContactPage() {
                       <Clock className="w-6 h-6 text-primary" />
                     </div>
                     <div>
-                      <h3 className="font-semibold text-foreground mb-1">Business Hours</h3>
+                      <h3 className="font-semibold text-foreground mb-1">Business Hours (lines open)</h3>
                       <p className="text-foreground/70 text-sm">
                         Monday - Friday: 9am - 5pm<br />
-                        Saturday: 10am - 2pm<br />
                         Sunday: Closed
                       </p>
                     </div>
@@ -290,11 +288,11 @@ export default function ContactPage() {
                 {[
                   {
                     question: 'How quickly can you provide a quote?',
-                    answer: 'We typically provide quotes within 24 hours of your inquiry. For urgent requests, we can often accommodate same-day quotes.',
+                    answer: 'Once the site visit is completed we endeavour to issue a quote within 48 working hours.',
                   },
                   {
                     question: 'Do you offer flexible scheduling?',
-                    answer: 'Yes, we offer flexible scheduling to suit your business needs, including early morning, evening, and weekend services when required.',
+                    answer: 'Yes, we offer flexible scheduling to suit your business needs, including early morning, evening, and Sunday services when required.',
                   },
                   {
                     question: 'Are your cleaning products eco-friendly?',
@@ -302,7 +300,7 @@ export default function ContactPage() {
                   },
                   {
                     question: 'Can you handle large-scale commercial cleaning?',
-                    answer: 'Absolutely! We have experience with everything from small offices to large commercial spaces and complex facilities.',
+                    answer: 'Absolutely! We have experience with everything from small offices to large commercial spaces.',
                   },
                 ].map((item, index) => (
                   <AccordionItem key={index} value={`item-${index}`}>
