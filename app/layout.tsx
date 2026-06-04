@@ -25,15 +25,39 @@ export const metadata: Metadata = {
     icons: {
         icon: [
             {
-                url: '/PWS-Logo/PWS-PNG-files/PWS-Primary-logo/PWS Primary Logo - dark Green@0.5x.png',
+                url: '/PWS-Logo/PWS-PNG-files/PWS-Icon-png-files/PWS Icon - dark green@0.5x.png',
                 media: '(prefers-color-scheme: light)',
             },
             {
-                url: '/PWS-Logo/PWS-PNG-files/PWS-Primary-logo/PWS Primary Logo - White@0.5x.png',
+                url: '/PWS-Logo/PWS-PNG-files/PWS-Icon-png-files/PWS Icon - white@0.5x.png',
                 media: '(prefers-color-scheme: dark)',
             },
         ],
-        apple: '/PWS-Logo/PWS-PNG-files/PWS-Primary-logo/PWS Primary Logo - dark Green@0.5x.png',
+        apple: '/PWS-Logo/PWS-PNG-files/PWS-Icon-png-files/PWS Icon - dark green@0.5x.png',
+    },
+
+    openGraph: {
+        title: 'Pure Work Spaces | Professional Cleaning Services',
+        description: 'Transform your workspace. Professional commercial cleaning services in Swindon, Oxford and surrounding areas.',
+        url: 'https://www.pureworkspaces.uk',
+        siteName: 'Pure Work Spaces',
+        images: [
+            {
+                url: '/PWS-Logo/PWS-PNG-files/PWS-Primary-logo/PWS Primary Logo - dark Green@0.5x.png',
+                width: 800,
+                height: 400,
+                alt: 'Pure Work Spaces Logo',
+            },
+        ],
+        locale: 'en_GB',
+        type: 'website',
+    },
+
+    twitter: {
+        card: 'summary_large_image',
+        title: 'Pure Work Spaces | Professional Cleaning Services',
+        description: 'Transform your workspace. Professional commercial cleaning services in Swindon, Oxford and surrounding areas.',
+        images: ['/PWS-Logo/PWS-PNG-files/PWS-Primary-logo/PWS Primary Logo - dark Green@0.5x.png'],
     },
 }
 
