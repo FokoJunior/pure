@@ -170,59 +170,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Section: Video Reel */}
-      <section className="py-24 bg-[#283524] text-[#f4efe6] overflow-hidden">
-        <div className="container mx-auto px-4">
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-16 items-center">
-            {/* Left Column: Text */}
-            <div className="lg:col-span-7 space-y-6">
-              <Reveal>
-                <div className="text-[11px] font-bold tracking-[0.2em] uppercase text-white/50 mb-2">Transparency & Care</div>
-                <h2 className="text-4xl md:text-5xl font-heading font-bold text-white tracking-tight leading-[1.15]">
-                  Watch Us <br /> in Action
-                </h2>
-                <div className="w-12 h-1 bg-white/20 my-6" />
-                <p className="text-lg leading-relaxed text-white/80 font-sans">
-                  We don&apos;t just talk about high standards—we demonstrate them. Watch our professional team delivering the precision, care, and attention to detail that defines our commercial cleaning services.
-                </p>
-                <p className="text-sm text-white/70 leading-relaxed font-sans">
-                  Our contract-led approach ensures that facility managers and business owners in Oxfordshire and Swindon get reliable, consistent execution every single visit. 
-                </p>
-                <div className="pt-6">
-                  <Button size="lg" className="bg-[#f4efe6] text-[#283524] hover:bg-white uppercase font-bold tracking-widest text-xs px-8 h-12" asChild>
-                    <Link href="/#contact">Book a site visit</Link>
-                  </Button>
-                </div>
-              </Reveal>
-            </div>
 
-            {/* Right Column: Phone Mockup Video */}
-            <div className="lg:col-span-5 flex justify-center">
-              <Reveal className="w-full max-w-[320px]">
-                <div className="relative mx-auto w-full aspect-[9/16] rounded-[40px] border-[8px] border-[#0e141a] bg-[#0e141a] shadow-2xl overflow-hidden ring-1 ring-white/10 group">
-                  {/* Smartphone Speaker/Camera Notch */}
-                  <div className="absolute top-0 left-1/2 -translate-x-1/2 h-5 w-32 bg-[#0e141a] rounded-b-2xl z-30 flex items-center justify-center">
-                    <div className="w-12 h-1 bg-white/25 rounded-full mb-1" />
-                  </div>
-                  {/* Video Element */}
-                  <video
-                    autoPlay
-                    muted
-                    loop
-                    playsInline
-                    controls
-                    preload="metadata"
-                    className="w-full h-full object-cover rounded-[32px] relative z-10"
-                  >
-                    <source src="/video/Pure Work Spaces Reel.mp4" type="video/mp4" />
-                    Your browser does not support the video tag.
-                  </video>
-                </div>
-              </Reveal>
-            </div>
-          </div>
-        </div>
-      </section>
 
       {/* Section: What We Do */}
       <section id="services" className="py-24 bg-white text-[#283524]">
@@ -377,14 +325,14 @@ export default function HomePage() {
                     href="https://wa.me/447300864523?text=I%20would%20like%20to%20book%20a%20site%20visit"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="flex items-start gap-4 group hover:opacity-90 transition-opacity"
+                    className="flex items-start gap-4 group hover:opacity-80 transition-opacity"
                   >
-                    <div className="w-10 h-10 bg-green-500/10 group-hover:bg-green-500/25 flex items-center justify-center shrink-0 transition-colors">
-                      <MessageCircle className="w-[18px] h-[18px] text-green-400 group-hover:text-green-300" />
+                    <div className="w-10 h-10 bg-white/[0.05] flex items-center justify-center shrink-0">
+                      <MessageCircle className="w-[18px] h-[18px] text-white/90" />
                     </div>
                     <div className="pt-0.5">
                       <div className="text-[10px] font-bold tracking-widest uppercase text-white/50 mb-1">WhatsApp Chat</div>
-                      <div className="text-[14px] font-semibold text-white tracking-wide group-hover:text-green-400 transition-colors">+44 7300 864523</div>
+                      <div className="text-[14px] font-semibold text-white tracking-wide">+44 7300 864523</div>
                     </div>
                   </a>
                 </Reveal>
