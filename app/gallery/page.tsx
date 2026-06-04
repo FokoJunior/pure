@@ -24,7 +24,7 @@ export default function GalleryPage() {
               <Button size="lg" className="bg-[#f4efe6] text-[#283524] hover:bg-white uppercase font-bold tracking-widest text-xs px-8 h-12" asChild>
                 <Link href="/#contact">Request a quote <ArrowRight className="ml-2 h-4 w-4" /></Link>
               </Button>
-              <Button size="lg" className="border border-white bg-white text-[#283524] hover:bg-[#f4efe6] uppercase font-bold tracking-widest text-xs px-8 h-12" asChild>
+              <Button size="lg" className="border border-white bg-white text-[#a3b09b] hover:bg-[#f4efe6] uppercase font-bold tracking-widest text-xs px-8 h-12" asChild>
                 <Link href="/">Back to Home</Link>
               </Button>
             </div>

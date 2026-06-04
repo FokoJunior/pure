@@ -16,7 +16,7 @@ export default function Footer() {
                             <img
                                 src="/PWS-Logo/PWS-Webp-Files/PWS wordmark - off white.webp"
                                 alt="Pure Work Spaces"
-                                className="h-18 md:h-18 w-auto"
+                                className="h-24 md:h-24 w-auto"
                             />
                             <p className="text-sm opacity-80 leading-relaxed max-w-xs">
                                 Cleanliness is not just a service, it is a foundation for clarity, confidence, and calm.
@@ -28,7 +28,7 @@ export default function Footer() {
                                 <a href="https://www.instagram.com/pureworkspaces/" target="_blank" rel="noopener noreferrer" className="opacity-70 hover:opacity-100 transition-opacity" aria-label="Instagram">
                                     <Instagram size={20} />
                                 </a>
-                                <a href="https://linkedin.com/pureworkspaces" target="_blank" rel="noopener noreferrer" className="opacity-70 hover:opacity-100 transition-opacity" aria-label="LinkedIn">
+                                <a href="https://linkedin.com/company/pureworkspaces" target="_blank" rel="noopener noreferrer" className="opacity-70 hover:opacity-100 transition-opacity" aria-label="LinkedIn">
                                     <Linkedin size={20} />
                                 </a>
                             </div>
