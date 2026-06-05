@@ -23,17 +23,8 @@ export const metadata: Metadata = {
     description: 'Transform your workspace. Professional commercial cleaning services in Swindon, Oxford and surrounding areas.',
 
     icons: {
-        icon: [
-            {
-                url: '/PWS-Logo/PWS-PNG-files/PWS-Icon-png-files/PWS Icon - dark green@0.5x.png',
-                media: '(prefers-color-scheme: light)',
-            },
-            {
-                url: '/PWS-Logo/PWS-PNG-files/PWS-Icon-png-files/PWS Icon - white@0.5x.png',
-                media: '(prefers-color-scheme: dark)',
-            },
-        ],
-        apple: '/PWS-Logo/PWS-PNG-files/PWS-Icon-png-files/PWS Icon - dark green@0.5x.png',
+        icon: [{ url: '/icon.svg', type: 'image/svg+xml' }],
+        apple: '/apple-icon.png',
     },
 
     openGraph: {
